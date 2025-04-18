@@ -1,0 +1,7 @@
+.git
+node_modules
+.vscode
+.next
+.gitignore
+README.md
+*-lock.yaml
