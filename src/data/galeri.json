@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Tablo Jalan Salib 2024",
+        "description": "Tablo Visualisasi Kisah Sengsara Yesus, diselenggarakan oleh OMK Wilayah 10",
+        "date": "10 April 2024",
+        "images": [
+            {"id": 101, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/Tablo1.jpg"},
+            {"id": 102, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/Tablo2.jpeg"},
+            {"id": 103, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/TAblo3.jpeg"},
+            {"id": 104, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/Tablo4.jpeg"},
+            {"id": 105, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/Tablo5.jpeg"},
+            {"id": 106, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/Tablo6.jpeg"}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Kamis Putih 2024",
+        "description": "Dokumentasi Misa Kamis Putih 2024",
+        "date": "9 April 2024",
+        "images": [
+            {"id": 201, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KAMISPUTIH1.jpg"},
+            {"id": 202, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KamisPutih2.jpg"},
+            {"id": 204, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KamisPutih3.jpg"},
+            {"id": 203, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KamisPutih4.jpg"},
+            {"id": 205, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KamisPutih5.jpg"},
+            {"id": 206, "imageUrl": "https://storage.googleapis.com/web-samara-storage/galeri/paskah-2024/KamisPutih2.jpg"}
+        ]
+    }
+]
