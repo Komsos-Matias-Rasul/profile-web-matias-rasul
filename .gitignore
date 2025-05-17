@@ -39,3 +39,5 @@ next-env.d.ts
 /public/assets/raw
 
 .env
+.htaccess
+tmp/
