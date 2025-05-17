@@ -3,9 +3,8 @@ import Link from "next/link";
 import { FaCompass } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { HiHome } from "react-icons/hi";
-import { MdChevronRight, MdChevronLeft } from "react-icons/md";
-import AdCarousell from "../AdCarousell";
-import { getDB } from "@/lib/db";
+import { MdChevronRight } from "react-icons/md";
+import { AdCarousell } from "@/components/AdCarousell";
 
 const Contents = ({articleContent}) => {
   const jsonData = JSON.parse(articleContent)
@@ -72,13 +71,15 @@ const AdImage3 = [
 
 const ArticlePage = async ({params}) => {
   const param = await params
-  const slug = param.title
+  const {year, editionId, slug} = param
   let content
-  const conn = getDB()
   try {
-    const article = await conn.query("SELECT * FROM articles WHERE slug = $1", [slug])
-    if (article.rows.length < 1) throw new Error("Article not found")
-    content = article.rows[0]
+    const res = await fetch(`${process.env.BACKEND_URL}/api/articles/${year}/${editionId}/${slug}`)
+    if (!res.ok) {
+      throw new Error("failed to retrieve article content")
+    }
+    const articleData = await res.json()
+    content = articleData.data
   }
   catch (err) {
     console.error(err)
@@ -158,27 +159,16 @@ const ArticlePage = async ({params}) => {
               </div>
               <div className="mb-8">
                 <div className="pb-3 border-b border-xmas-secondary/50 flex flex-col gap-4">
-                  {/* <h2 className="font-ibara text-xl text-xmas-tertiary font-semibold">{content.category_id}</h2> */}
                   <h1 className="text-5xl lg:text-7xl font-ibara font-semibold text-xmas-primary leading-none hidden md:block">{content.title}</h1>
                   <div className="flex items-center gap-2">
                     <div>
                       <p className="text-xs text-xmas-secondary font-semibold font-heading uppercase">{content.writer_name}</p>
-                      <p className="text-xs text-xmas-tertiary font-heading">{new Date(content.created_at).toLocaleDateString("id-US", {dateStyle:"long"})}</p>
+                      <p className="text-xs text-xmas-tertiary font-heading">{new Date(content.published_date).toLocaleDateString("id-US", {dateStyle:"long"})}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <Contents articleContent={content.content_json} />
-              {/* <div className="flex justify-between">
-                <div className="flex items-center gap-2 hover:text-blue-secondary cursor-pointer transition-colors">
-                  <MdChevronLeft />
-                  <p>Artikel Sebelumnya</p>
-                </div>
-                <div className="flex items-center gap-2 hover:text-blue-secondary cursor-pointer transition-colors">
-                  <p>Artikel Selanjutnya</p>
-                  <MdChevronRight />
-                </div>
-              </div> */}
               <div className="relative w-full aspect-[1080/224] bg-slate-200 mt-8 flex justify-center items-center">
                 <Image src="https://storage.googleapis.com/zaitun-dev/ads/C1.webp"
                   fill

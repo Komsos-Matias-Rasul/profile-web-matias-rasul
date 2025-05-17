@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 import { Autoplay, EffectFade } from 'swiper/modules'
-import Image from 'next/image';
+import { PopUpAdModal } from './PopUpAdModal';
 
-const AdCarousell = ({ads, onSwiperClicked, sizing}) => {
+export const AdCarousell = ({ads}) => {
   return (
     <Swiper
       autoplay={{
@@ -20,9 +20,9 @@ const AdCarousell = ({ads, onSwiperClicked, sizing}) => {
       {
         ads.map((ad, i) => {
           return (
-            <SwiperSlide key={i} onClick={() => onSwiperClicked(ad)}>
-              <div className="relative w-full aspect-[4/5] bg-zinc-700 rounded flex overflow-hidden mb-2">
-                <Image className="object-cover" fill priority alt="" src={ad} sizes={sizing} />
+            <SwiperSlide key={i}>
+              <div className="rounded overflow-hidden m-2">
+                <PopUpAdModal img={ad} width={100}/>
               </div>
             </SwiperSlide>
           )
@@ -31,5 +31,3 @@ const AdCarousell = ({ads, onSwiperClicked, sizing}) => {
     </Swiper>
   )
 }
-
-export default AdCarousell

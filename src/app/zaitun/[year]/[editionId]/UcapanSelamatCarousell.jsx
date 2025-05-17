@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { SwiperSlide, Swiper } from "swiper/react"
 import { Autoplay } from 'swiper/modules'

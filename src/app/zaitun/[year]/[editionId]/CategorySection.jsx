@@ -5,9 +5,12 @@ import { useState, useEffect } from "react"
 
 const getArticleContent = async (categoryId, callback) => {
   try {
-    const res = await fetch(`/api/articles?category=${categoryId}`) 
-    const data = await res.json()
-    callback(data)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/articles?category=${categoryId}`)
+    if (!res.ok) {
+      throw new Error("failed to fetch articles")
+    }
+    const jsonData = await res.json()
+    callback(jsonData.data)
   } catch (err) {
     console.error(err)
   }
@@ -27,12 +30,12 @@ const CategorySection = ({ categoryId, categoryTitle }) => {
           contents.map((item, i) => {
             return (
               <div key={i} className="flex flex-col lg:flex-row items-center gap-4">
-                <Link href={`/zaitun/${item.slug}`} className="w-full">
+                <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`} className="w-full">
                 <div className="relative w-full lg:w-56 aspect-[5/4] lg:aspect-[4/5] overflow-hidden rounded-lg">
                   <div className="relative w-full lg:w-56 aspect-[5/4] lg:aspect-[4/5] bg-xmas-tertiary/25 hover:scale-110 ease-in-out duration-500">
                     <Image
                       loading="lazy"
-                      src={item.thumb_img}
+                      src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
                       fill
                       alt=""
                       className="object-cover"
@@ -41,13 +44,13 @@ const CategorySection = ({ categoryId, categoryTitle }) => {
                 </div>
                 </Link>
                 <div>
-                  <Link href={`/zaitun/${item.slug}`}>
+                  <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`}>
                     <h3 className="text-3xl font-ibara font-semibold text-xmas-primary hover:text-xmas-tertiary transition-colors">{item.title}</h3>
                   </Link>
                   <p className="text-xmas-dark line-clamp-3 mt-2 text-base lg:text-xl">{item.thumb_text}</p>
                   <div className="mt-2">
                     <p className="text-xs md:text-sm lg:text-base text-xmas-secondary uppercase">{item.writer_name}</p>
-                    <p className="text-xs md:text-sm lg:text-base text-xmas-tertiary">{new Date(item.created_at).toLocaleDateString('id-US', {dateStyle: "long"})}</p>
+                    <p className="text-xs md:text-sm lg:text-base text-xmas-tertiary">{new Date(item.published_date).toLocaleDateString('id-US', {dateStyle: "long"})}</p>
                   </div>
                 </div>
               </div>

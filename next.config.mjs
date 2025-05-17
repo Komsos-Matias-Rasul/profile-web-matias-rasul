@@ -4,14 +4,14 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'zaitun.id',
+        hostname: 'parokikosambi-backend.vercel.app',
         port: '',
         pathname: '/**',
       },
       {
         protocol: 'http',
         hostname: 'localhost',
-        port: '3000',
+        port: '8080',
         pathname: '/**',
       },
       {
@@ -28,6 +28,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/zaitun",
+        destination: "/zaitun/2024/2",
+        permanent: false
+      }
+    ]
+  }
 };
 
 export default nextConfig;

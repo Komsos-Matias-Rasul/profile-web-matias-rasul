@@ -8,17 +8,18 @@ import Image from "next/image"
 
 import 'swiper/css'
 import Link from "next/link"
-import { getTopArticles } from "@/actions/articles"
+// import { getTopArticles } from "@/actions/articles"
 
-const getTopArticle = async (callback) => {
-  const articleData = await getTopArticles()
-  callback(articleData)
+const getTopArticle = async (editionId, callback) => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/articles/top?editionId=${editionId}`)
+  const jsonData = await res.json()
+  callback(jsonData.data)
 }
 
-const TopCarousell = () => {
+const TopCarousell = ({ editionId }) => {
   const [topArticles, setTopArticles] = useState([])
   useEffect(()=> {
-    getTopArticle(setTopArticles)
+    getTopArticle(editionId, setTopArticles)
   }, [])
   const [currentNews, setCurrentNews] = useState(0)
   const swiperRef = useRef()
@@ -65,14 +66,14 @@ const TopCarousell = () => {
                       <div className="relative">
                         <div className="relative w-full aspect-square bg-xmas-tertiary/25">
                           <Image
-                            src={item.thumb_img}
+                            src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
                             alt=""
                             fill
                             className="object-cover brightness-75"
                             />
                         </div >
                         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-xmas-primary/0 to-xmas-primary/75" />
-                        <Link href={`/zaitun/${item.slug}`} className="absolute bottom-4 left-4 text-3xl md:text-4xl lg:text-6xl text-xmas-neutral font-ibara font-bold hover:underline">{item.title}</Link>
+                        <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`} className="absolute bottom-4 left-4 text-3xl md:text-4xl lg:text-6xl text-xmas-neutral font-ibara font-bold hover:underline">{item.title}</Link>
                       </div>
                     </SwiperSlide>
                   )
@@ -118,25 +119,25 @@ const TopCarousell = () => {
                     (currentNews === i ? "-translate-y-3 " : "translate-y-0 ") +
                     " flex flex-col gap-2 transition-transform duration-400"
                     }>
-                    <Link href={`/zaitun/${item.slug}`}>
+                    <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`}>
                       <div className={
                         (currentNews === i ? "shadow-lg " : "shadow-none ") +
                         " relative w-full aspect-square bg-xmas-tertiary/25 transition-shadow rounded-lg overflow-hidden"}>
                         <Image
-                          src={item.thumb_img}
+                          src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
                           alt=""
                           fill
                           className="object-cover"
                         />
                       </div>
                     </Link>
-                    <Link href={`/zaitun/${item.slug}`}>
+                    <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`}>
                       <h3 className="text-xl font-ibara font-medium text-xmas-primary line-clamp-3 lg:line-clamp-none">{item.title}</h3>
                     </Link>
                     <div className="flex items-center gap-2">
                       <div>
                         <p className="text-xs text-xmas-secondary uppercase">{item.writer_name}</p>
-                        <p className="text-xs text-xmas-tertiary">{new Date(item.created_at).toLocaleDateString('id-US', {
+                        <p className="text-xs text-xmas-tertiary">{new Date(item.published_date).toLocaleDateString('id-US', {
                           dateStyle: 'long'
                         })}</p>
                       </div>
