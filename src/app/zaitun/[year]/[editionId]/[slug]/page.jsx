@@ -26,7 +26,7 @@ const Contents = ({articleContent}) => {
             return (
               <div key={block.id} className="my-8">
                 <Image
-                  src={block.data.file.url}
+                  src={process.env.NEXT_PUBLIC_BACKEND_URL + block.data.file.url}
                   alt={block.data.caption}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   height={0}
@@ -104,7 +104,7 @@ const ArticlePage = async ({params}) => {
               priority
               alt="headline image"
               sizes="(max-width: 768px) 0vw, (max-width: 1200px) 50vw, 33vw"
-              src={content.headline_img} />
+              src={process.env.NEXT_PUBLIC_BACKEND_URL + content.headline_img} />
           </div>
           <div className="px-2 py-6 h-full border-r border-xmas-tertiary/20 bg-xmas-neutral flex flex-col justify-between">
             <div className="flex flex-col gap-2">
@@ -130,7 +130,7 @@ const ArticlePage = async ({params}) => {
           <div className="relative w-full min-h-screen md:min-h-min block md:hidden">
             <div className="absolute size-full">
               <div className="relative w-full h-screen">
-                <Image sizes="(max-width: 768px) 100vw, 0vw" src={content.headline_img} fill priority className="object-cover brightness-50" alt="cover" />
+                <Image sizes="(max-width: 768px) 100vw, 0vw" src={process.env.NEXT_PUBLIC_BACKEND_URL + content.headline_img} fill priority className="object-cover brightness-50" alt="cover" />
               </div>
             </div>
             <div className="absolute flex items-end p-4 h-full">
