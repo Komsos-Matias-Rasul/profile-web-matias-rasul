@@ -48,18 +48,44 @@ const Sponsors = () => {
 }
 
 const AdImage1 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB2.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
 ]
 
 const AdImage2 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
 ]
 
 const AdImage3 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB6.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
+]
+
+const AdCa = [
+  "https://storage.googleapis.com/zaitun-dev/ads/C1.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C2.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C3.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C5.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C6.webp",
+]
+const AdCb = [
+  "https://storage.googleapis.com/zaitun-dev/ads/C3.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C4.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C5.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C6.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C1.webp",
+  "https://storage.googleapis.com/zaitun-dev/ads/C2.webp",
 ]
 
 const ZaitunPage = async () => {
@@ -128,6 +154,14 @@ const ZaitunPage = async () => {
           </div>
           <div className="w-full md:w-[45%] py-10 px-4 flex-shrink-0">
             <div className="w-full max-w-max md:max-w-prose">
+              <div className="flex md:hidden flex-row justify-center">
+                <div className="w-1/2">
+                  <AdCarousell ads={AdImage1}/>
+                </div>
+                <div className="w-1/2">
+                  <AdCarousell ads={AdImage3}/>
+                </div>
+              </div>
               <h1 className="hidden md:block text-6xl lg:text-8xl font-ibara font-bold leading-tight text-xmas-primary">
                 {editionData.title}
               </h1>
@@ -135,14 +169,11 @@ const ZaitunPage = async () => {
                 <ContentSection categories={editionData.categories} editionId={editionData.id}/>
               </div>
               <div className="flex flex-row justify-center">
-                <div className="w-[30%]">
-                  <AdCarousell ads={AdImage1}/>
+                <div className="w-1/2">
+                  <AdCarousell ads={AdCa}/>
                 </div>
-                <div className="w-[30%]">
-                  <AdCarousell ads={AdImage2}/>
-                </div>
-                <div className="w-[30%]">
-                  <AdCarousell ads={AdImage3}/>
+                <div className="w-1/2">
+                  <AdCarousell ads={AdCb}/>
                 </div>
               </div>
               <Sponsors />

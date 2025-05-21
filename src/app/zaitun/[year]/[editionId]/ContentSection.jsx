@@ -1,19 +1,6 @@
 import TopCarousell from "./TopCarousell"
 import CategorySection from "./CategorySection"
-import AdCarousell from "../../../../components/AdCarousell"
-import UcapanSelamatCarousell from "./UcapanSelamatCarousell"
-
-const AdImage1 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB2.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB3.webp",
-]
-
-const AdImage2 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB6.webp",
-]
+import IklanB from "./IklanB"
 
 const ContentSection = ({openModal, categories, editionId}) => {
   return (
@@ -22,6 +9,7 @@ const ContentSection = ({openModal, categories, editionId}) => {
       <div className="mt-4 mb-20">
         <TopCarousell editionId={editionId}/>
       </div>
+      <IklanB />
       {
         categories.map(category => <CategorySection key={category.id} categoryId={category.id} categoryTitle={category.label}/>)
       }
@@ -34,7 +22,7 @@ const ContentSection = ({openModal, categories, editionId}) => {
         </div>
       </div> */}
       {/* <CategorySection categoryId={5} categoryTitle="Sambutan"/> */}
-      {/* <UcapanSelamatCarousell /> */}
+      
       {/* <CategorySection categoryId={2} categoryTitle="Liputan Utama"/> */}
       {/* <div className="flex gap-4 pr-4 lg:hidden mt-12">
         <div className="w-1/2">
