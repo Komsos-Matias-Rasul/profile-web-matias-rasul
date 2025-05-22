@@ -34,7 +34,6 @@ const SPONSORS_LOGO_3 = [
 
 
 const RunningLogo = ({sponsorsLogo, x, duration=5}) => {
-  console.log(sponsorsLogo)
   const sponsorsLogo_dup = [...sponsorsLogo, ...sponsorsLogo, ...sponsorsLogo]
   return (
     <>
