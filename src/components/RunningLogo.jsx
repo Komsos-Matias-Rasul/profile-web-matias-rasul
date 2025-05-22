@@ -1,3 +1,8 @@
+/**
+ * Running logo reference: https://www.freecodecamp.org/news/author/Cejay101/
+ * Article Source: https://www.freecodecamp.org/news/build-an-image-carousel-with-react-and-framer-motion/
+ */
+
 "use client"
 
 import Image from "next/image"
