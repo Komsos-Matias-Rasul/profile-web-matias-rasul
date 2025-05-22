@@ -6,7 +6,13 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'parokikosambi-backend.vercel.app',
         port: '',
-        pathname: '/**',
+        pathname: '/api/img/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'parokikosambi-backend.vercel.app',
+        port: '',
+        pathname: '/api/ads/**',
       },
       {
         protocol: 'http',
