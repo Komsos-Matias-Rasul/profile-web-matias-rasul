@@ -12,38 +12,20 @@ const Sponsors = () => {
   const AD_DIR = "https://storage.googleapis.com/zaitun-dev/ads/"
 
   return (
-    <div className="">
-      <h2 className="text-center font-heading text-blue-primary mb-2">Terima kasih kepada:</h2>
+    <>
+      <h2 className="text-center font-heading text-xmas-secondary mb-8">Ucapan terima kasih kepada:</h2>
 
       {/* Iklan D */}
-      <div className="grid grid-cols-3 gap-3 mb-3 mx-auto justify-center">
+      <div className="grid grid-cols-3 gap-8 mb-8 mx-auto justify-center w-4/5">
         {
-          [1,2,3,4,5].map((adNumber) => {
+          [1,2,3,4,5,6,7,8,9,10].map((adNumber) => {
           const image = `${AD_DIR}D${adNumber}.webp`
           return (
             <PopUpAdModal key={adNumber} img={image} width={80}/>
           )})
         }
       </div>
-
-      {/* Iklan E */}
-      <div className="grid grid-cols-4 gap-3 mb-3">
-        {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((adNumber) => {
-          const image = `${AD_DIR}E${adNumber}.webp`
-          return (
-            <PopUpAdModal key={adNumber} img={image} width={80}/>
-        )})}
-      </div>
-
-      {/* Iklan F */}
-      <div className="grid grid-cols-5 gap-3">
-        {[1,2,3,4,5,6,7,8,9,10,11,12].map((adNumber) => {
-          const image = `${AD_DIR}F${adNumber}.webp`
-          return (
-            <PopUpAdModal key={adNumber} img={image} width={80}/>
-        )})}
-      </div>
-    </div>
+    </>
   )
 }
 
@@ -168,7 +150,7 @@ const ZaitunPage = async () => {
               <div className="my-8">
                 <ContentSection categories={editionData.categories} editionId={editionData.id}/>
               </div>
-              <div className="flex flex-row justify-center">
+              <div className="flex flex-row justify-center w-[85%] m-auto mb-48">
                 <div className="w-1/2">
                   <AdCarousell ads={AdCa}/>
                 </div>

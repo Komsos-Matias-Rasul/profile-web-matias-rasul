@@ -22,7 +22,7 @@ const CategorySection = ({ categoryId, categoryTitle }) => {
     getArticleContent(categoryId, setContents)
   }, [categoryId])
   return (
-    <div className="mt-20">
+    <div className="mb-20">
       <h3 className="font-ibara font-medium text-2xl my-4 text-xmas-secondary">{categoryTitle}</h3>
       <div className="flex flex-col gap-12 lg:gap-4">
         {

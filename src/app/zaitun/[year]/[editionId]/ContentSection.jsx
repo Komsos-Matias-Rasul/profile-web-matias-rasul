@@ -9,41 +9,12 @@ const ContentSection = ({openModal, categories, editionId}) => {
       <div className="mt-4 mb-20">
         <TopCarousell editionId={editionId}/>
       </div>
-      <IklanB />
+      <div className="w-full flex justify-center">
+        <IklanB />
+      </div>
       {
         categories.map(category => <CategorySection key={category.id} categoryId={category.id} categoryTitle={category.label}/>)
       }
-      {/* <div className="flex gap-4 pr-4 lg:hidden">
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage1} onSwiperClicked={openModal}/>
-        </div>
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage2} onSwiperClicked={openModal}/>
-        </div>
-      </div> */}
-      {/* <CategorySection categoryId={5} categoryTitle="Sambutan"/> */}
-      
-      {/* <CategorySection categoryId={2} categoryTitle="Liputan Utama"/> */}
-      {/* <div className="flex gap-4 pr-4 lg:hidden mt-12">
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage1} onSwiperClicked={openModal}/>
-        </div>
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage2} onSwiperClicked={openModal}/>
-        </div>
-      </div> */}
-      {/* <CategorySection categoryId={1} categoryTitle="Liputan Umum"/> */}
-      {/* <CategorySection categoryId={3} categoryTitle="Katekese"/> */}
-      {/* <div className="flex gap-4 pr-4 lg:hidden mt-12">
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage1} onSwiperClicked={openModal}/>
-        </div>
-        <div className="w-1/2">
-          <AdCarousell ads={AdImage2} onSwiperClicked={openModal}/>
-        </div>
-      </div> */}
-      {/* <CategorySection categoryId={4} categoryTitle="Tradisi dan Sejarah"/> */}
-      {/* <CategorySection categoryId={6} categoryTitle="Serba Serbi"/> */}
     </>
   )
 }

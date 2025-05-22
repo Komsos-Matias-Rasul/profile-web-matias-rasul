@@ -13,7 +13,7 @@ const ads = [
 
 const IklanB = () => {
   return(
-    <div className="w-full relative z-0 mt-10">
+    <div className="w-2/3 relative z-0">
       <Swiper
         autoplay={{
           delay: 2500,

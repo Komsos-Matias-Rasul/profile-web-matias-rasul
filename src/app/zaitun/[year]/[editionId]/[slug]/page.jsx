@@ -5,6 +5,7 @@ import { FiLogOut } from "react-icons/fi";
 import { HiHome } from "react-icons/hi";
 import { MdChevronRight } from "react-icons/md";
 import { AdCarousell } from "@/components/AdCarousell";
+import { AdCarouselConstructor } from "@/helpers/ads";
 
 const Contents = ({articleContent}) => {
   const jsonData = JSON.parse(articleContent)
@@ -38,9 +39,9 @@ const Contents = ({articleContent}) => {
           }
           if (block.type === "list") {
             return (
-              <ul key={block.id} className={"pl-4 list-outside " + (block.data.style === "unordered" ? " list-disc" : " list-decimal")}>
+              <ul key={block.id} className={"pl-8 list-outside mb-4 " + (block.data.style === "unordered" ? " list-disc" : " list-decimal")}>
                   {
-                    block.data.items.map((listItem, i) => <li key={i} className="text-xmas-dark text-base lg:text-lg">{listItem.content}</li>)
+                    block.data.items.map((listItem, i) => <li key={i} className="text-xmas-dark text-base lg:text-lg" dangerouslySetInnerHTML={{__html: listItem.content}} />)
                   }
               </ul>
             )
@@ -72,7 +73,7 @@ const AdImage3 = [
 const ArticlePage = async ({params}) => {
   const param = await params
   const {year, editionId, slug} = param
-  let content
+  let content, adCarousels
   try {
     const res = await fetch(`${process.env.BACKEND_URL}/api/articles/${year}/${editionId}/${slug}`)
     if (!res.ok) {
@@ -80,6 +81,10 @@ const ArticlePage = async ({params}) => {
     }
     const articleData = await res.json()
     content = articleData.data
+    const adsJson = JSON.parse(articleData.data.ads_json)
+    if (adsJson?.side) {
+      adCarousels = AdCarouselConstructor(adsJson.side, 3)
+    }
   }
   catch (err) {
     console.error(err)
@@ -93,9 +98,9 @@ const ArticlePage = async ({params}) => {
         <div className="h-screen w-[55%] fixed hidden md:flex">
           <div className="w-[16%] min-w-[180px] hidden lg:block flex-shrink-0 h-full bg-zinc-800 p-2">
             <p className="text-center italic text-white/50">Advertisements</p>
-            <AdCarousell ads={AdImage1} sizing="(max-width: 768px) 0vw, 20vw"/>
-            <AdCarousell ads={AdImage2} sizing="(max-width: 768px) 0vw, 20vw"/>
-            <AdCarousell ads={AdImage3} sizing="(max-width: 768px) 0vw, 20vw"/>
+            {
+              adCarousels?.map((_, i) => <AdCarousell key={i} ads={adCarousels[i]}/>)
+            }
           </div>
           <div className="relative w-full h-full bg-xmas-tertiary/25">
             <Image
@@ -141,17 +146,18 @@ const ArticlePage = async ({params}) => {
           </div>
           <div className="w-full md:w-[45%] py-10 px-4 flex-shrink-0">
             <div className="w-full max-w-max md:max-w-prose">
-              <div className="flex lg:hidden gap-2 pr-4">
-                <div className="w-1/3">
-                  <AdCarousell ads={AdImage1} sizing="(max-width: 1024px) 30vw, 0vw"/>
+              {
+                adCarousels ?
+                <div className="flex lg:hidden justify-center mx-auto mb-20">
+                  <div className="w-1/2">
+                    <AdCarousell ads={adCarousels[0]}/>
+                  </div>
+                  <div className="w-1/2">
+                    <AdCarousell ads={adCarousels[2]}/>
+                  </div>
                 </div>
-                <div className="w-1/3">
-                  <AdCarousell ads={AdImage2} sizing="(max-width: 1024px) 30vw, 0vw"/>
-                </div>
-                <div className="w-1/3">
-                  <AdCarousell ads={AdImage3} sizing="(max-width: 1024px) 30vw, 0vw"/>
-                </div>
-              </div>
+                : null
+              }
               <div className="flex gap-2 items-center text-sm mb-8 w-full md:w-2/3 lg:w-1/2">
                 <Link href="/zaitun" className="text-xmas-tertiary">Beranda</Link>
                 <MdChevronRight className="text-neutral-600 flex-shrink-0"/>
@@ -169,14 +175,14 @@ const ArticlePage = async ({params}) => {
                 </div>
               </div>
               <Contents articleContent={content.content_json} />
-              <div className="relative w-full aspect-[1080/224] bg-slate-200 mt-8 flex justify-center items-center">
+              {/* <div className="relative w-full aspect-[1080/224] bg-slate-200 mt-8 flex justify-center items-center">
                 <Image src="https://storage.googleapis.com/zaitun-dev/ads/C1.webp"
                   fill
                   className="object-cover"
                   alt="ad"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
