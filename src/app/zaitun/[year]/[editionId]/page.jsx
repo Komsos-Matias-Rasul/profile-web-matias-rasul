@@ -7,9 +7,11 @@ import { FaCompass } from "react-icons/fa6";
 import { FiLogOut } from "react-icons/fi";
 import { AdCarousell } from "@/components/AdCarousell";
 import { PopUpAdModal } from "@/components/PopUpAdModal";
+import { AdCarouselConstructor } from "@/helpers/ads";
+import LogoSection from "@/components/RunningLogo";
 
 const Sponsors = () => {
-  const AD_DIR = "https://storage.googleapis.com/zaitun-dev/ads/"
+  const AD_DIR = process.env.NEXT_PUBLIC_BACKEND_URL + "/api/ads/2025/"
 
   return (
     <>
@@ -19,55 +21,33 @@ const Sponsors = () => {
       <div className="grid grid-cols-3 gap-8 mb-8 mx-auto justify-center w-4/5">
         {
           [1,2,3,4,5,6,7,8,9,10].map((adNumber) => {
-          const image = `${AD_DIR}D${adNumber}.webp`
+            const image = `${AD_DIR}D${adNumber}.webp`
           return (
             <PopUpAdModal key={adNumber} img={image} width={80}/>
           )})
         }
       </div>
+      <h2 className="text-center font-heading text-xmas-secondary mb-8">Terima kasih untuk dukungan:</h2>
+      <LogoSection />
     </>
   )
 }
 
-const AdImage1 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
+const adsA = [
+  "/api/ads/2025/A1.webp",
+  "/api/ads/2025/A2.webp",
+  "/api/ads/2025/A3.webp",
+  "/api/ads/2025/A4.webp",
+  "/api/ads/2025/A5.webp",
 ]
 
-const AdImage2 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
-]
-
-const AdImage3 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/A3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/A2.webp",
-]
-
-const AdCa = [
-  "https://storage.googleapis.com/zaitun-dev/ads/C1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C2.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C6.webp",
-]
-const AdCb = [
-  "https://storage.googleapis.com/zaitun-dev/ads/C3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C4.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C6.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/C2.webp",
+const adsC = [
+  "/api/ads/2025/C1.webp",
+  "/api/ads/2025/C2.webp",
+  "/api/ads/2025/C3.webp",
+  "/api/ads/2025/C4.webp",
+  "/api/ads/2025/C5.webp",
+  "/api/ads/2025/C6.webp",
 ]
 
 const ZaitunPage = async () => {
@@ -84,6 +64,8 @@ const ZaitunPage = async () => {
     // change dis to error page pls >:(
     return <div>Error</div>
   }
+  const adACarousels = AdCarouselConstructor(adsA, 3)
+  const adCCarousels = AdCarouselConstructor(adsC, 2)
 
   return (
     <div className="min-h-screen">
@@ -91,9 +73,9 @@ const ZaitunPage = async () => {
         <div className="h-screen w-[55%] fixed hidden md:flex">
           <div className="w-[16%] min-w-[180px] h-full bg-zinc-800 p-2 hidden lg:block">
             <p className="text-center italic text-white/50">Advertisements</p>
-            <AdCarousell ads={AdImage1}/>
-            <AdCarousell ads={AdImage2}/>
-            <AdCarousell ads={AdImage3}/>
+            {
+              adACarousels?.map((_, i) => <AdCarousell key={i} ads={adACarousels[i]} />)
+            }
           </div>
 
           <div className="relative w-full h-full hidden md:block bg-xmas-tertiary/25">
@@ -138,10 +120,10 @@ const ZaitunPage = async () => {
             <div className="w-full max-w-max md:max-w-prose">
               <div className="flex md:hidden flex-row justify-center">
                 <div className="w-1/2">
-                  <AdCarousell ads={AdImage1}/>
+                  <AdCarousell ads={adACarousels[0]}/>
                 </div>
                 <div className="w-1/2">
-                  <AdCarousell ads={AdImage3}/>
+                  <AdCarousell ads={adACarousels[2]}/>
                 </div>
               </div>
               <h1 className="hidden md:block text-6xl lg:text-8xl font-ibara font-bold leading-tight text-xmas-primary">
@@ -151,12 +133,13 @@ const ZaitunPage = async () => {
                 <ContentSection categories={editionData.categories} editionId={editionData.id}/>
               </div>
               <div className="flex flex-row justify-center w-[85%] m-auto mb-48">
-                <div className="w-1/2">
-                  <AdCarousell ads={AdCa}/>
-                </div>
-                <div className="w-1/2">
-                  <AdCarousell ads={AdCb}/>
-                </div>
+                {
+                  adCCarousels?.map((_, i) => (
+                    <div key={i} className="w-1/2">
+                      <AdCarousell ads={adCCarousels[i]}/>
+                    </div>
+                  ))
+                }
               </div>
               <Sponsors />
             </div>

@@ -55,21 +55,6 @@ const Contents = ({articleContent}) => {
   )
 }
 
-const AdImage1 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB2.webp",
-]
-
-const AdImage2 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB3.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB4.webp",
-]
-
-const AdImage3 = [
-  "https://storage.googleapis.com/zaitun-dev/ads/AB5.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/AB6.webp",
-]
-
 const ArticlePage = async ({params}) => {
   const param = await params
   const {year, editionId, slug} = param
@@ -175,14 +160,6 @@ const ArticlePage = async ({params}) => {
                 </div>
               </div>
               <Contents articleContent={content.content_json} />
-              {/* <div className="relative w-full aspect-[1080/224] bg-slate-200 mt-8 flex justify-center items-center">
-                <Image src="https://storage.googleapis.com/zaitun-dev/ads/C1.webp"
-                  fill
-                  className="object-cover"
-                  alt="ad"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div> */}
             </div>
           </div>
         </div>
