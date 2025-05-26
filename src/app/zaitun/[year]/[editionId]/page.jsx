@@ -48,6 +48,7 @@ const adsC = [
   "/api/ads/2025/C4.webp",
   "/api/ads/2025/C5.webp",
   "/api/ads/2025/C6.webp",
+  "/api/ads/2025/C7.webp",
 ]
 
 const ZaitunPage = async () => {
