@@ -10,7 +10,7 @@ import 'swiper/css'
 
 const DUMMY_NEWS = [
   {
-    title: "Zaitun Edisi Paskah 2024",
+    title: "Zaitun Edisi Paskah 2025",
     description: "Ingin tahu kisah di balik Tablo Paskah hingga ziarah di Gereja Katedral Osaka? Baca artikel-artikel menarik yang telah terbit di <a target='_blank' href='/zaitun' class='font-bold text-blue-secondary underline'>Zaitun Edisi Paskah 2025.</a>",
     img: "https://storage.googleapis.com/web-samara-storage/info-terbaru/Zaitun%20Ver2%201920x1080_rev2.jpg"
   },
