@@ -54,7 +54,7 @@ const adsC = [
 const ZaitunPage = async () => {
   let editionData
   try {
-    const res = await fetch(`${process.env.BACKEND_URL}/api/zaitun/current`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/zaitun/current`)
     if (!res.ok) {
       throw new Error("failed to retrieve edition data")
     }
@@ -80,7 +80,7 @@ const ZaitunPage = async () => {
           </div>
 
           <div className="relative w-full h-full hidden md:block bg-xmas-tertiary/25">
-            <Image className="object-cover" fill priority alt="" src={process.env.BACKEND_URL + editionData.cover_img} />
+            <Image className="object-cover" fill priority alt="" src={process.env.NEXT_PUBLIC_BACKEND_URL + editionData.cover_img} />
           </div>
 
           <div className="hidden md:flex px-2 py-6 h-full border-r border-xmas-tertiary/20 bg-xmas-neutral flex-col justify-between">
@@ -108,7 +108,7 @@ const ZaitunPage = async () => {
           <div className="relative w-full min-h-screen md:min-h-min block md:hidden">
             <div className="absolute size-full">
               <div className="relative w-full h-screen">
-                <Image src={process.env.BACKEND_URL + editionData.cover_img} fill priority className="object-cover brightness-50" alt="cover" />
+                <Image src={process.env.NEXT_PUBLIC_BACKEND_URL + editionData.cover_img} fill priority className="object-cover brightness-50" alt="cover" />
               </div>
             </div>
             <div className="absolute flex items-end p-4 h-full">
