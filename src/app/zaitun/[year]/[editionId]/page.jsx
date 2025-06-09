@@ -133,7 +133,7 @@ const ZaitunPage = async () => {
               <div className="my-8">
                 <ContentSection categories={editionData.categories} editionId={editionData.id}/>
               </div>
-              <div className="flex flex-row justify-center w-[85%] m-auto mb-48">
+              <div className="flex flex-row justify-center w-[85%] m-auto mb-20">
                 {
                   adCCarousels?.map((_, i) => (
                     <div key={i} className="w-1/2">
