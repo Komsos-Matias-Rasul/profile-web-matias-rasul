@@ -86,7 +86,7 @@ const Navbar = () => {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
+              <Button className="bg-transparent h-auto transition-colors text-[1rem] text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
                 Profil
               </Button>
             </DropdownTrigger>
@@ -126,7 +126,7 @@ const Navbar = () => {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
+              <Button className="bg-transparent h-auto transition-colors text-[1rem] text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
                 Jadwal
               </Button>
             </DropdownTrigger>
