@@ -1,5 +1,10 @@
 "use client";
-import { Dropdown, DropdownItem, DropdownTrigger, DropdownMenu } from "@heroui/dropdown";
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownTrigger,
+  DropdownMenu,
+} from "@heroui/dropdown";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -8,7 +13,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
-
 } from "@heroui/navbar";
 import Link from "next/link";
 import { Accordion, AccordionItem } from "@heroui/accordion";
@@ -60,7 +64,12 @@ const Navbar = () => {
                 " relative h-14 aspect-[54/10] transition-all"
               }
             >
-              <Image src="/static/logo_50.svg" alt="" fill className="object-cover" />
+              <Image
+                src="/static/logo_50.svg"
+                alt=""
+                fill
+                className="object-cover"
+              />
             </div>
           </Link>
         </NavbarBrand>
@@ -77,13 +86,11 @@ const Navbar = () => {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button
-                className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1"
-              >
+              <Button className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
                 Profil
               </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Profil Menu" >
+            <DropdownMenu aria-label="Profil Menu">
               <DropdownItem>
                 <Link href="/visi-misi" className="w-full py-2 px-4">
                   Visi dan Misi
@@ -119,13 +126,11 @@ const Navbar = () => {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button
-                className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1"
-              >
+              <Button className="bg-transparent h-auto transition-colors text-neutral-dark hover:bg-blue-secondary/25 hover:!text-blue-secondary rounded-md px-3 py-1">
                 Jadwal
               </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Profil Menu" >
+            <DropdownMenu aria-label="Profil Menu">
               <DropdownItem>
                 <Link href="/jadwal-misa" className="w-full py-2 px-4">
                   Jadwal Misa
@@ -143,7 +148,7 @@ const Navbar = () => {
               </DropdownItem>
               <DropdownItem>
                 <Link href="/petugas-liturgi" className="w-full py-2 px-4">
-                  Jadwal Petugas Liturgi
+                  Jadwal Petugas Liturgi (WIP)
                 </Link>
               </DropdownItem>
             </DropdownMenu>
@@ -179,29 +184,38 @@ const Navbar = () => {
         </NavbarMenuItem>
 
         <NavbarMenuItem className="flex">
-          <Accordion showDivider >
-            <AccordionItem title='Profil'
-              className='transition-colors transition-colors px-2 border-b border-slate-200'
+          <Accordion showDivider>
+            <AccordionItem
+              title="Profil"
+              className="transition-colors transition-colors px-2 border-b border-slate-200"
             >
               <div className="flex flex-col gap-2 pl-4">
-                <Link href="/visi-misi"
+                <Link
+                  href="/visi-misi"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Visi dan Misi
                 </Link>
-                <Link href="/sejarah"
+                <Link
+                  href="/sejarah"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Sejarah Paroki
                 </Link>
-                <Link href="/profil-pastor"
+                <Link
+                  href="/profil-pastor"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Profil Pastor
                 </Link>
-                <Link href="/susunan-pengurus"
+                <Link
+                  href="/susunan-pengurus"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Susunan Pengurus
                 </Link>
               </div>
@@ -210,36 +224,48 @@ const Navbar = () => {
         </NavbarMenuItem>
 
         <NavbarMenuItem className="flex">
-          <Link onClick={() => setIsMenuOpen(false)} href="/zaitun"
-            className="w-full hover:text-blue-secondary transition-colors py-2 px-4 border-b border-slate-200">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/zaitun"
+            className="w-full hover:text-blue-secondary transition-colors py-2 px-4 border-b border-slate-200"
+          >
             Zaitun
           </Link>
         </NavbarMenuItem>
 
         <NavbarMenuItem className="flex">
-          <Accordion showDivider >
-            <AccordionItem title='Jadwal'
-              className='transition-colors transition-colors px-2 border-b border-slate-200'
+          <Accordion showDivider>
+            <AccordionItem
+              title="Jadwal"
+              className="transition-colors transition-colors px-2 border-b border-slate-200"
             >
               <div className="flex flex-col gap-2 pl-4">
-                <Link href="/jadwal-misa"
+                <Link
+                  href="/jadwal-misa"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary  transition-colors w-fit">
+                  className="hover:text-blue-secondary  transition-colors w-fit"
+                >
                   Jadwal Misa
                 </Link>
-                <Link href="/jadwal-kegiatan"
+                <Link
+                  href="/jadwal-kegiatan"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Jadwal Kegiatan
                 </Link>
-                <Link href="/jadwal-layanan"
+                <Link
+                  href="/jadwal-layanan"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Jadwal Layanan
                 </Link>
-                <Link href="/petugas-liturgi"
+                <Link
+                  href="/petugas-liturgi"
                   onClick={() => setIsMenuOpen(false)}
-                  className="hover:text-blue-secondary transition-colors w-fit">
+                  className="hover:text-blue-secondary transition-colors w-fit"
+                >
                   Jadwal Petugas Liturgi
                 </Link>
               </div>
@@ -247,8 +273,6 @@ const Navbar = () => {
           </Accordion>
         </NavbarMenuItem>
 
-        
-        
         <NavbarMenuItem className="flex">
           <Link
             onClick={() => setIsMenuOpen(false)}

@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { FaInstagram, FaPhoneAlt, FaWhatsapp, FaYoutube } from "react-icons/fa"
-import { FiMail } from "react-icons/fi"
+import Link from "next/link";
+import { FaInstagram, FaPhoneAlt, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  const path = usePathname()
+  const path = usePathname();
 
   return path.split("/").indexOf("zaitun") > -1 ? null : (
     <footer>
@@ -15,10 +15,15 @@ const Footer = () => {
           {/* 1 */}
           <div className="w-full md:w-1/3">
             <div className="text-white mb-6">
-              <h1 className="text-xl md:text-2xl font-black">Paroki Kosambi Baru</h1>
-              <h2 className="text-lg md:text-xl mb-2">Gereja Santo Matias Rasul</h2>
+              <h1 className="text-xl md:text-2xl font-black">
+                Paroki Kosambi Baru
+              </h1>
+              <h2 className="text-lg md:text-xl mb-2">
+                Gereja Santo Matias Rasul
+              </h2>
               <p className="text-sm md:text-base">
-                Taman Kosambi Barat blok A ext 1 no.120 Perumahan Kosambi Baru, Jakarta Barat 11750
+                Taman Kosambi Barat blok A ext 1 no.120 Perumahan Kosambi Baru,
+                Jakarta Barat 11750
               </p>
             </div>
             <div className="flex flex-col gap-2">
@@ -71,7 +76,9 @@ const Footer = () => {
           {/* 2 */}
           <div className="w-full md:w-1/4">
             <div>
-              <h2 className="text-lg md:text-xl font-semibold text-white">Komsos Paroki</h2>
+              <h2 className="text-lg md:text-xl font-semibold text-white">
+                Komsos Paroki
+              </h2>
             </div>
             <div>
               <Link
@@ -86,10 +93,6 @@ const Footer = () => {
           </div>
 
           {/* 3 */}
-          <div className="w-full md:w-1/3">
-            <div className="flex items-center w-full h-full bg-slate-200 animate-pulse rounded" />
-          </div>
-          
         </div>
       </div>
       <div className="flex w-full justify-center bg-blue-950 py-2">
@@ -100,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
