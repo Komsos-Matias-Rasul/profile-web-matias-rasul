@@ -51,10 +51,11 @@ const adsC = [
   "/api/ads/2025/C7.webp",
 ]
 
-const ZaitunPage = async () => {
+const ZaitunPage = async ({params}) => {
+  const { editionId } = await params
   let editionData
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/zaitun/current`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/editions/${editionId}`)
     if (!res.ok) {
       throw new Error("failed to retrieve edition data")
     }

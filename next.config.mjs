@@ -4,13 +4,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'parokikosambi-backend.vercel.app',
+        hostname: 'api.parokikosambibaru.or.id',
         port: '',
         pathname: '/api/img/**',
       },
       {
         protocol: 'https',
-        hostname: 'parokikosambi-backend.vercel.app',
+        hostname: 'api.parokikosambibaru.or.id',
         port: '',
         pathname: '/api/ads/**',
       },
