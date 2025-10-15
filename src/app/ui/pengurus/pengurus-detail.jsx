@@ -31,7 +31,7 @@ export const PengurusDetail = ({ pengurus }) => {
                       <Card key={koorIndex} className="shadow" >
                         <CardBody>
                           <Image
-                            src={pengurusItem.image}
+                            src={koor.img}
                             alt={koor.namaKoorBidang}
                             width={150}
                             height={150}
@@ -58,7 +58,7 @@ export const PengurusDetail = ({ pengurus }) => {
                         <Card key={detailIndex} className="shadow">
                           <CardBody>
                             <Image
-                              src={pengurusItem.image}
+                              src={detail.img}
                               alt=""
                               width={150}
                               height={150}

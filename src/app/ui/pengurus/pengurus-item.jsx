@@ -45,17 +45,18 @@ PengurusItem.propTypes = {
                 koorBidang: PropTypes.arrayOf(
                     PropTypes.shape({
                         namaKoorBidang: PropTypes.string.isRequired,
-                        jabatanKoorBidang: PropTypes.string.isRequired
+                        jabatanKoorBidang: PropTypes.string.isRequired,
+                        img: PropTypes.string
                     })
                 ).isRequired,
-                image: PropTypes.string.isRequired,
                 seksi: PropTypes.arrayOf(
                     PropTypes.shape({
                         namaSeksi: PropTypes.string.isRequired,
                         seksiDetail: PropTypes.arrayOf(
                             PropTypes.shape({
                                 nama: PropTypes.string.isRequired,
-                                jabatan: PropTypes.string.isRequired
+                                jabatan: PropTypes.string.isRequired,
+                                img: PropTypes.string
                             })
                         ).isRequired
                     })
