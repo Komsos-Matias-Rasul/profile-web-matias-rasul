@@ -7,8 +7,8 @@ import 'swiper/css'
 import { PopUpAdModal } from "@/components/PopUpAdModal"
 
 const ads = [
-  "https://storage.googleapis.com/zaitun-dev/ads/B1.webp",
-  "https://storage.googleapis.com/zaitun-dev/ads/B2.webp",
+  "/ads/B1.webp",
+  "/ads/B2.webp",
 ]
 
 const IklanB = () => {
@@ -27,7 +27,7 @@ const IklanB = () => {
             return (
               <SwiperSlide key={i}>
                 <div className="bg-xmas-tertiary/20 aspect-video rounded overflow-hidden">
-                  <PopUpAdModal img={item} width={100}/>
+                  <PopUpAdModal img={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item} width={100}/>
                 </div>
               </SwiperSlide>
             )

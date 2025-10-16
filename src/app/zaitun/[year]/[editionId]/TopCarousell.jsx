@@ -66,7 +66,7 @@ const TopCarousell = ({ editionId }) => {
                       <div className="relative">
                         <div className="relative w-full aspect-square bg-xmas-tertiary/25">
                           <Image
-                            src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
+                            src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumb_img}
                             alt=""
                             fill
                             className="object-cover brightness-75"
@@ -124,7 +124,7 @@ const TopCarousell = ({ editionId }) => {
                         (currentNews === i ? "shadow-lg " : "shadow-none ") +
                         " relative w-full aspect-square bg-xmas-tertiary/25 transition-shadow rounded-lg overflow-hidden"}>
                         <Image
-                          src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
+                          src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumb_img}
                           alt=""
                           fill
                           className="object-cover"

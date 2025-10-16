@@ -35,7 +35,7 @@ const CategorySection = ({ categoryId, categoryTitle }) => {
                   <div className="relative w-full lg:w-56 aspect-[5/4] lg:aspect-[4/5] bg-xmas-tertiary/25 hover:scale-110 ease-in-out duration-500">
                     <Image
                       loading="lazy"
-                      src={process.env.NEXT_PUBLIC_BACKEND_URL + item.thumb_img}
+                      src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumb_img}
                       fill
                       alt=""
                       className="object-cover"

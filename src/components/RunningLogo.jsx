@@ -9,27 +9,27 @@ import Image from "next/image"
 import { motion } from 'framer-motion'
 
 const SPONSORS_LOGO_1 = [
-  "/api/ads/2025/logo1.webp",
-  "/api/ads/2025/logo2.webp",
-  "/api/ads/2025/logo3.webp",
-  "/api/ads/2025/logo4.webp",
-  "/api/ads/2025/logo5.webp",
+  "/ads/2025/logo1.webp",
+  "/ads/2025/logo2.webp",
+  "/ads/2025/logo3.webp",
+  "/ads/2025/logo4.webp",
+  "/ads/2025/logo5.webp",
 ]
 const SPONSORS_LOGO_2 = [
-  "/api/ads/2025/logo6.webp",
-  "/api/ads/2025/logo7.webp",
-  "/api/ads/2025/logo8.webp",
-  "/api/ads/2025/logo9.webp",
-  "/api/ads/2025/logo10.webp",
-  "/api/ads/2025/logo11.webp",
+  "/ads/2025/logo6.webp",
+  "/ads/2025/logo7.webp",
+  "/ads/2025/logo8.webp",
+  "/ads/2025/logo9.webp",
+  "/ads/2025/logo10.webp",
+  "/ads/2025/logo11.webp",
 ]
 const SPONSORS_LOGO_3 = [
-  "/api/ads/2025/logo12.webp",
-  "/api/ads/2025/logo13.webp",
-  "/api/ads/2025/logo14.webp",
-  "/api/ads/2025/logo15.webp",
-  "/api/ads/2025/logo16.webp",
-  "/api/ads/2025/logo17.webp",
+  "/ads/2025/logo12.webp",
+  "/ads/2025/logo13.webp",
+  "/ads/2025/logo14.webp",
+  "/ads/2025/logo15.webp",
+  "/ads/2025/logo16.webp",
+  "/ads/2025/logo17.webp",
 ]
 
 
@@ -55,7 +55,7 @@ const RunningLogo = ({sponsorsLogo, x, duration=5}) => {
                 <div className="mx-2">
                     <Image
                       key={index}
-                      src={process.env.NEXT_PUBLIC_BACKEND_URL + logo}
+                      src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + logo}
                       alt=""
                       width={50}
                       height={0}
