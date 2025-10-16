@@ -22,30 +22,33 @@ export const PengurusDetail = ({ pengurus }) => {
               {pengurus.namaBidang}
             </h2>
 
-            {pengurus.penguruss.map((pengurusItem, index) => (
-
+            {(pengurus.penguruss || []).map((pengurusItem, index) => (
               <div key={index} className="mb-8">
-                <div className="">
-                  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
-                    {pengurusItem.koorBidang.map((koor, koorIndex) => (
-                      <Card key={koorIndex} className="shadow" >
-                        <CardBody>
-                          <Image
-                            src={koor.img}
-                            alt={koor.namaKoorBidang}
-                            width={150}
-                            height={150}
-                            layout="responsive"
-                            className="mx-auto mb-2 w-25 h-25 object-cover rounded"
-                          />
-                          <h1 className="text-md text-center font-semibold">{koor.namaKoorBidang}</h1>
-                          <hr className="my-2 border-t-2 border-gray-300" />
-                          <p className="text-center text-gray-600">{koor.jabatanKoorBidang}</p>
-                        </CardBody>
-                      </Card>
-                    ))}
-                  </div>
-                </div>
+                {(pengurusItem.koorBidang && pengurusItem.koorBidang.length > 0) && (
+                  <>
+                    <div className="">
+                      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+                        {pengurusItem.koorBidang.map((koor, koorIndex) => (
+                          <Card key={koorIndex} className="shadow" >
+                            <CardBody>
+                              <Image
+                                src={koor.img}
+                                alt={koor.namaKoorBidang}
+                                width={150}
+                                height={150}
+                                layout="responsive"
+                                className="mx-auto mb-2 w-25 h-25 object-cover rounded"
+                              />
+                              <h1 className="text-md text-center font-semibold">{koor.namaKoorBidang}</h1>
+                              <hr className="my-2 border-t-2 border-gray-300" />
+                              <p className="text-center text-gray-600">{koor.jabatanKoorBidang}</p>
+                            </CardBody>
+                          </Card>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
 
                 {pengurusItem.seksi.map((seksi, seksiIndex) => (
                   <div key={seksiIndex} className="flex flex-col mt-2 sm:mt-4 md:mt-6 lg:mt-9">

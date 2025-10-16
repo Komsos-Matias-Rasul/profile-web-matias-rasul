@@ -92,74 +92,74 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Herybertus Budiyanto Delima","jabatanKoorBidang": "Koordinator Bidang Peribadatan" }
+                    { "namaKoorBidang": "Herybertus Budiyanto Delima","jabatanKoorBidang": "Koordinator Bidang Peribadatan", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/9HerybertusBudiyantoDelima.webp" }
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI LITURGI",
                         "seksiDetail": [
-                            { "nama": "Gerarda Maria Kiswolini" }
+                            { "nama": "Gerarda Maria Kiswolini", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/01GerardaMariaKiswolini.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI LEKTOR",
                         "seksiDetail": [
-                            { "nama": "Mathias Dani" }
+                            { "nama": "Mathias Dani", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/02MathiasDani.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI PEMAZMUR",
                         "seksiDetail": [
-                            { "nama": "Roswita Desi Enita" }
+                            { "nama": "Roswita Desi Enita" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/03RoswitaDesiEnita.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI PASDIOR",
                         "seksiDetail": [
-                            { "nama": "Crescentia Maria Andjar Ekawati" }
+                            { "nama": "Crescentia Maria Andjar Ekawati" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/04CrescentiaMariaAndjarEkawati.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI MISDINAR",
                         "seksiDetail": [
-                            { "nama": "Brigitta Bianca Subono" }
+                            { "nama": "Brigitta Bianca Subono" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/05BrigittaBiancaSubono.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI TATA LAKSANA",
                         "seksiDetail": [
-                            { "nama": "Petrus Hengky" }
+                            { "nama": "Petrus Hengky" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/06PetrusHengky.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI PRODIAKON",
                         "seksiDetail": [
-                            { "nama": "Antonius Andy Hartono" }
+                            { "nama": "Antonius Andy Hartono", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/07AntoniusAndyHartono.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI DEKORASI GEREJA",
                         "seksiDetail": [
-                            { "nama": "Elisabeth Tinawati Lukito" }
+                            { "nama": "Elisabeth Tinawati Lukito", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/08ElisabethTinawatiLukito.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI PARAMENTA",
                         "seksiDetail": [
-                            { "nama": "Florence Natalina" }
+                            { "nama": "Florence Natalina" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/09FlorenceNatalina.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI MULTIMEDIA & SOUNDSYSTEM",
                         "seksiDetail": [
-                            { "nama": "Felix Ferdinand" }
+                            { "nama": "Felix Ferdinand" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/10FelixFerdinand.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI TATA GERAK PERKAWINAN",
                         "seksiDetail": [
-                            { "nama": "Imelda Nely Taslim" }
+                            { "nama": "Imelda Nely Taslim" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/Peribadatan/11ImeldaNelyTaslim.webp"}
                         ]
                     }
                 ]
@@ -174,75 +174,75 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Klara Yanti Suryat","jabatanKoorBidang": "Koordinator Bidang Perwartaan" }
+                    { "namaKoorBidang": "Klara Yanti Suryat","jabatanKoorBidang": "Koordinator Bidang Perwartaan" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/10KlaraYantiSuryat.webp"}
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI KATEKESE",
                         "seksiDetail": [
-                            { "nama": "Henricus Budi Pratomo Sudibyo"}
+                            { "nama": "Henricus Budi Pratomo Sudibyo", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/01HenricusBudiPratomoSudibyo.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI BAPLITA",
                         "seksiDetail": [
-                            { "nama": "Anastasia Lim"}
+                            { "nama": "Anastasia Lim", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/02AnastasiaLim.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI KATEKUMENAT",
                         "seksiDetail": [
-                            { "nama": "Gregorius Eddy Soemady"}
+                            { "nama": "Gregorius Eddy Soemady", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/03GregoriusEddySoemady.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI KOMUNI PERTAMA",
                         "seksiDetail": [
-                            { "nama": "Maria Fransiska Meliany"}
+                            { "nama": "Maria Fransiska Meliany", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/04MariaFransiskaMeliany.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI KRISMA",
                         "seksiDetail": [
-                            { "nama": "Vincencia Severina Mariati Gunadi"}
+                            { "nama": "Vincencia Severina Mariati Gunadi", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/05VincenciaSeverinaMariatiGunadi.webp"}
                         ]
                     },
                     
                     {
                         "namaSeksi": "SUB SEKSI BIR",
                         "seksiDetail": [
-                            { "nama": "Petrus Leovando Sutanto"}
+                            { "nama": "Petrus Leovando Sutanto", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/07PetrusLeovandoSutanto.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI BIA",
                         "seksiDetail": [
-                            { "nama": "Laurensia Evita Tofiani"}
+                            { "nama": "Laurensia Evita Tofiani", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/06LaurensiaEvitaTofiani.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI EJ",
                         "seksiDetail": [
-                            { "nama": "Lukas Hadrianz Reydy Japaris"}
+                            { "nama": "Lukas Hadrianz Reydy Japaris", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/09LukasHadrianzReydyJaparis.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI KERASULAN KITAB SUCI (KKS)",
                         "seksiDetail": [
-                            { "nama": "Stefanie Adityavarna"}
+                            { "nama": "Stefanie Adityavarna", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/08StefanieAdityavarna.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI KOMSOS",
                         "seksiDetail": [
-                            { "nama": "Yoseph Sonny Sutanto"}
+                            { "nama": "Yoseph Sonny Sutanto", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/11YosephSonnySutanto.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI KEP",
                         "seksiDetail": [
-                            { "nama": "Adrianus Atu Odja"}
+                            { "nama": "Adrianus Atu Odja", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pewartaan/10Adrianus%20Atu%20Odja.webp"}
                         ]
                     }
                 ]
@@ -257,62 +257,62 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Ignatius Susilo Santoso","jabatanKoorBidang": "Koordinator Bidang Pelayanan" }
+                    { "namaKoorBidang": "Ignatius Susilo Santoso","jabatanKoorBidang": "Koordinator Bidang Pelayanan" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/11IgnatiusSusiloSantoso.webp"}
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI PSE",
                         "seksiDetail": [
-                            { "nama": "Yulius Riyan"}
+                            { "nama": "Yulius Riyan", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/01YuliusRiyan.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI KESEHATAN",
                         "seksiDetail": [
-                            { "nama": "Paulina Maria Purnamawati" }
+                            { "nama": "Paulina Maria Purnamawati" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/03PaulinaMariaPurnamawati.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI PENDIDIKAN",
                         "seksiDetail": [
-                            { "nama": "Maria Erika Ambarita" }
+                            { "nama": "Maria Erika Ambarita", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/02MariaErikaAmbarita.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "TIM TABUT",
                         "seksiDetail": [
-                            { "nama": "Cecilia Novalasa Bungakarna" }
+                            { "nama": "Cecilia Novalasa Bungakarna", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/05CECILIANOVALASABUNGAKARNA.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "TIM BSKY",
                         "seksiDetail": [
-                            { "nama": "Yonas Andi Robi" }
+                            { "nama": "Yonas Andi Robi", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/04YonasAndiRobi.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "TIM KEDUKAAN",
                         "seksiDetail": [
-                            { "nama": "Elisabeth Hernajati Sutanto" }
+                            { "nama": "Elisabeth Hernajati Sutanto" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/07ElisabethHernajatiSutanto.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "TIM ASAK",
                         "seksiDetail": [
-                            { "nama": "Ellijani Djatnika" }
+                            { "nama": "Ellijani Djatnika", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/06EllijaniDjatnika.webp" }
                         ]
                     },
                     {
                         "namaSeksi": "TIM SABUK",
                         "seksiDetail": [
-                            { "nama": "Nikolas Ho Budianto" }
+                            { "nama": "Nikolas Ho Budianto" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/09NikolasHoBudianto.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "TIM AYO KERJA",
                         "seksiDetail": [
-                            { "nama": "Elisabeth Chandra Susanty" }
+                            { "nama": "Elisabeth Chandra Susanty" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/08ElisabethChandraSusanty.webp"}
                         ]
                     }
                     
@@ -328,21 +328,21 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Franciscus Xaverius Prasetyoadi","jabatanKoorBidang": "Koordinator Bidang Persekutuan" }
+                    { "namaKoorBidang": "Franciscus Xaverius Prasetyoadi","jabatanKoorBidang": "Koordinator Bidang Persekutuan" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/12FranciscusXaveriusPrasetyoadi.webp"}
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI PANGGILAN",
                         "seksiDetail": [
-                            { "nama": "Paulus Paryatin"}
+                            { "nama": "Paulus Paryatin", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Persekutuan/01PaulusParyatin.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI KERASULAN KELUARGA (KKP)", 
                         "seksiDetail": [
-                            { "nama": "Antonius Fredy Tanuwidjaja"},
-                            { "nama": "Agatha Maria Debbie Tjandra"}
+                            { "nama": "Antonius Fredy Tanuwidjaja & Agatha Maria Debbie Tjandra", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Persekutuan/02FredyDebbie.webp"}
+                            
                         ]
                     }
                 ]
@@ -357,38 +357,38 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Ignatius Parwono","jabatanKoorBidang": "Koordinator Bidang Kesaksian" }
+                    { "namaKoorBidang": "Ignatius Parwono","jabatanKoorBidang": "Koordinator Bidang Kesaksian" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/13IgnatiusParwono.webp" }
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI KEADILAN PERDAMAIAN",
                         "seksiDetail": [
-                            { "nama": "Wilhelm Iwan Purnama"}
+                            { "nama": "Wilhelm Iwan Purnama", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kesaksian/02WilhelmIwanPurnama.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI ADVOKASI", 
                         "seksiDetail": [
-                            { "nama": "Bernadus Galuh Elnanda Cahyadi"}
+                            { "nama": "Bernadus Galuh Elnanda Cahyadi", "img":"/static/dummy.jpg"}
                         ]
                     },
                     {
                         "namaSeksi": "SUB SEKSI LINGKUNGAN HIDUP", 
                         "seksiDetail": [
-                            { "nama": "Herman Yoseph Rudiyanto"}
+                            { "nama": "Herman Yoseph Rudiyanto", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kesaksian/03HERMANYOSEPHRUDIYANTO.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "TIM BANK SAMARA",
                         "seksiDetail": [
-                            { "nama": "Ign. Benedictus Yacob Chandra"}
+                            { "nama": "Ign. Benedictus Yacob Chandra", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kesaksian/05Ign.BenedictusYacobChandra.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI HAAK",
                         "seksiDetail": [
-                            { "nama": "Johanes Hardi"}
+                            { "nama": "Johanes Hardi", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kesaksian/01JohanesHardi.webp"}
                         ]
                     }
                 ]
@@ -403,20 +403,20 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Stefanus Dharmadi Layarda Lay","jabatanKoorBidang": "Koordinator Bidang Pelatihan & Pengembangan Paroki" }
+                    { "namaKoorBidang": "Stefanus Dharmadi Layarda Lay","jabatanKoorBidang": "Koordinator Bidang Pelatihan & Pengembangan Paroki" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/14StefanusDharmadiLayardaLay.webp"}
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI PENELITIAN DAN PENGEMBANGAN",
                         "seksiDetail": [
-                            { "nama": "Antonius Eric Adiwijaya"}
+                            { "nama": "Antonius Eric Adiwijaya", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/BP3/02AntoniusEricAdiwijaya.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "SEKSI PELATIHAN & PENGKADERAN", 
                         "seksiDetail": [
-                            { "nama": "Basilius Endra Nugroho"}
+                            { "nama": "Basilius Endra Nugroho", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/BP3/01BasiliusEndraNugroho.webp"}
                         ]
                     }
                 ]
@@ -431,57 +431,56 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Maria Then Nie","jabatanKoorBidang": "Koordinator Bidang Kategorial" }
+                    { "namaKoorBidang": "Maria Then Nie","jabatanKoorBidang": "Koordinator Bidang Kategorial", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/18MariaThenNie.webp"  }
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "LEGIO MARIAE",
                         "seksiDetail": [
-                            { "nama": "Vincensius Pauli Wiguna"}
+                            { "nama": "Vincensius Pauli Wiguna", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/05VincensiusPauliWiguna.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "PDPKK", 
                         "seksiDetail": [
-                            { "nama": "Sim Stevanus Kristanto"}
+                            { "nama": "Sim Stevanus Kristanto", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/01SimStevanusKristanto.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "PDOMPKK", 
                         "seksiDetail": [
-                            { "nama": "Ryan Giantara"}
+                            { "nama": "Ryan Giantara", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/02RYANGIANTARA.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "KOMUNITAS LANSIA", 
                         "seksiDetail": [
-                            { "nama": "Thomas Lim"}
+                            { "nama": "Thomas Lim", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/03ThomasLim.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "PWK SANTA MONICA", 
                         "seksiDetail": [
-                            { "nama": "Catharina Diana Gunawan"}
+                            { "nama": "Catharina Diana Gunawan", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/04CatharinaDianaGunawan.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "KOMUNITAS MARRIAGE ENCOUNTER (ME)", 
                         "seksiDetail": [
-                            { "nama": "Robertus Bellarminus Robby Mulyadi"},
-                            { "nama": "Valensia Lusiana Lioe"}
+                            { "nama": "Robertus Bellarminus Robby Mulyadi & Valensia Lusiana Lioe", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/06RobertusBellarminusRobbyMulyadidanValensiaLusianaLioe.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "WANITA KATOLIK (WK)", 
                         "seksiDetail": [
-                            { "nama": "Theresia Tresna Evalina Simanjuntak"}
+                            { "nama": "Theresia Tresna Evalina Simanjuntak", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/07TheresiaTresnaEvalinaSimanjuntak.webp"}
                         ]
                     },
                     {
                         "namaSeksi": "KOMUNITAS KERAHIMAN ILAHI", 
                         "seksiDetail": [
-                            { "nama": "Ferdinand Makmur Kuncorojati"}
+                            { "nama": "Ferdinand Makmur Kuncorojati", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kategorial/08FerdinandMakmurKuncorojati.webp"}
                         ]
                     }
                 ]
@@ -497,15 +496,45 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "Cecilia Prishella","jabatanKoorBidang": "Koordinator Bidang Kepemudaan" },
-                    { "namaKoorBidang": "Maria Myra Medianti","jabatanKoorBidang": "Koordinator Bidang Kepemudaan" }
+                    { "namaKoorBidang": "Cecilia Prishella","jabatanKoorBidang": "Koordinator Bidang Kepemudaan" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/19CeciliaPrishella.webp"},
+                    { "namaKoorBidang": "Maria Myra Medianti","jabatanKoorBidang": "Koordinator Bidang Kepemudaan" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/20MariaMyraMedianti.webp"}
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
                     {
                         "namaSeksi": "SEKSI KEPEMUDAAN",
                         "seksiDetail": [
-                            { "nama": "Bernard Rangga Wijaya"}
+                            { "nama": "Bernard Rangga Wijaya", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kepemudaan/01BernardRanggaWijaya.webp"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "namaBidang": "Bidang Pastoral",
+        "imageBidang": "/static/dummy.jpg",
+        "penguruss": [
+            {
+                "image": "/static/dummy.jpg",
+                "seksi": [
+                    {
+                        "namaSeksi": "TIM RUMAH TANGGA PASTORAN 1",
+                        "seksiDetail": [
+                            { "nama": "Silvi Rina Kasim", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/Pastoral/01SilviRinaKasim.webp"}
+                        ]
+                    },
+                    {
+                        "namaSeksi": "BAGIAN KEAMANAN 1",
+                        "seksiDetail": [
+                            { "nama": "Pius Sinaga", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/Pastoral/02PIUSSINAGA.webp"}  
+                        ]
+                    },
+                    {
+                        "namaSeksi": "BAGIAN PEMELIHARAAN",
+                        "seksiDetail": [
+                            { "nama": "Husodo Oyong", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/Pastoral/03HusodoOyong.webp"}
                         ]
                     }
                 ]

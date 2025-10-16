@@ -37,18 +37,18 @@ export const PengurusItem = ({ item }) => {
 
 PengurusItem.propTypes = {
     item: PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        namaBidang: PropTypes.string.isRequired,
-        imageBidang: PropTypes.string.isRequired,
+        id: PropTypes.number,
+        namaBidang: PropTypes.string,
+        imageBidang: PropTypes.string,
         penguruss: PropTypes.arrayOf(
             PropTypes.shape({
                 koorBidang: PropTypes.arrayOf(
                     PropTypes.shape({
-                        namaKoorBidang: PropTypes.string.isRequired,
-                        jabatanKoorBidang: PropTypes.string.isRequired,
+                        namaKoorBidang: PropTypes.string,
+                        jabatanKoorBidang: PropTypes.string,
                         img: PropTypes.string
                     })
-                ).isRequired,
+                ),
                 seksi: PropTypes.arrayOf(
                     PropTypes.shape({
                         namaSeksi: PropTypes.string.isRequired,
@@ -60,8 +60,8 @@ PengurusItem.propTypes = {
                             })
                         ).isRequired
                     })
-                ).isRequired
+                )
             })
-        ).isRequired
-    }).isRequired
+        )
+    })
 };
