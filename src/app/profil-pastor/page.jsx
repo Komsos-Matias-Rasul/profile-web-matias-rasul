@@ -74,7 +74,7 @@ const ContentSection = () => {
       <div className="w-4/5 max-w-[1300px] py-10 md:py-20">
         <div className="flex flex-col md:grid md:grid-cols-3 gap-8">
           <CardItem img="https://storage.googleapis.com/web-samara-storage/pastor-paroki/romo-yus.webp" nama="RD. Aloysius Yus Noron" posisi="Pastor Kepala" masaJabat="2022 - sekarang" />
-          <CardItem img="https://storage.googleapis.com/web-samara-storage/pastor-paroki/romo-patrick.webp" nama="RD. Patrick Selamet Widodo" posisi="Pastor Rekan" masaJabat="2024 - sekarang" />
+          <CardItem img="https://storage.googleapis.com/web-samara-storage/pastor-paroki/romo-patrick.webp" nama="RD. Patrick Slamet Widodo" posisi="Pastor Rekan" masaJabat="2024 - sekarang" />
           <CardItem img="https://storage.googleapis.com/web-samara-storage/pastor-paroki/romo-gunadi.webp" nama="RD. Gunadi Emmanuel" posisi="Pastor Residensi" masaJabat="" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-8 overflow-x-auto">

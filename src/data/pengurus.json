@@ -6,8 +6,8 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "A. Yus Noron, Pr","jabatanKoorBidang": "Ketua Umum" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/1A.YusNoron%2CPr.webp"},
-                    { "namaKoorBidang": "Pastor Silvester Hari Pamungkas, Pr","jabatanKoorBidang": "Ketua 1", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/2PastorSilvesterHariPamungkas%2CPr.webp" },
+                    { "namaKoorBidang": "RD. Aloysius Yus Noron, Pr","jabatanKoorBidang": "Ketua Umum" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/1A.YusNoron%2CPr.webp"},
+                    { "namaKoorBidang": "RD. Silvester Hari Pamungkas, Pr","jabatanKoorBidang": "Ketua 1", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/2PastorSilvesterHariPamungkas%2CPr.webp" },
                     { "namaKoorBidang": "Johanes Hendrie Aripin","jabatanKoorBidang": "Wakil Ketua 1" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/3JohanesHendrieAripin.webp"},
                     { "namaKoorBidang": "Benedictus Hendry Sarwono","jabatanKoorBidang": "Wakil Ketua 2", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/4BenedictusHendrySarwono.webp" },
                     { "namaKoorBidang": "Laurentius Dede Kurniawan Wachjudi","jabatanKoorBidang": "Bendahara 1", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/5LaurentiusDedeKurniawanWachjudi.webp" },
@@ -314,6 +314,12 @@
                         "seksiDetail": [
                             { "nama": "Elisabeth Chandra Susanty" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/08ElisabethChandraSusanty.webp"}
                         ]
+                    },
+                    {
+                        "namaSeksi": "FRATER ASISTENSI",
+                        "seksiDetail": [
+                            { "nama": "Bonaventura Caesario Hapsoro" , "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Pelayanan/10BonaventuraCaesarioHapsoro.webp"}
+                        ]
                     }
                     
                 ]
@@ -370,7 +376,7 @@
                     {
                         "namaSeksi": "SUB SEKSI ADVOKASI", 
                         "seksiDetail": [
-                            { "nama": "Bernadus Galuh Elnanda Cahyadi", "img":"/static/dummy.jpg"}
+                            { "nama": "Bernadus Galuh Elnanda Cahyadi", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/Kesaksian/04BernardusGaluhElnandaCahyadi.jpg"}
                         ]
                     },
                     {
