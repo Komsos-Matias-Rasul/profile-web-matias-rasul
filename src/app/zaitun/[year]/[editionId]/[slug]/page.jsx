@@ -66,7 +66,7 @@ const ArticlePage = async ({params}) => {
     }
     const articleData = await res.json()
     content = articleData.data
-    const adsJson = JSON.parse(articleData.data.ads_json)
+    const adsJson = JSON.parse(articleData.data.ads)
     if (adsJson?.side) {
       adCarousels = AdCarouselConstructor(adsJson.side, 3)
     }
@@ -94,7 +94,7 @@ const ArticlePage = async ({params}) => {
               priority
               alt="headline image"
               sizes="(max-width: 768px) 0vw, (max-width: 1200px) 50vw, 33vw"
-              src={process.env.GCLOUD_PREFIX + content.headline_img} />
+              src={process.env.GCLOUD_PREFIX + content.coverImg} />
           </div>
           <div className="px-2 py-6 h-full border-r border-xmas-tertiary/20 bg-xmas-neutral flex flex-col justify-between">
             <div className="flex flex-col gap-2">
@@ -120,7 +120,7 @@ const ArticlePage = async ({params}) => {
           <div className="relative w-full min-h-screen md:min-h-min block md:hidden">
             <div className="absolute size-full">
               <div className="relative w-full h-screen">
-                <Image sizes="(max-width: 768px) 100vw, 0vw" src={process.env.GCLOUD_PREFIX + content.headline_img} fill priority className="object-cover brightness-50" alt="cover" />
+                <Image sizes="(max-width: 768px) 100vw, 0vw" src={process.env.GCLOUD_PREFIX + content.coverImg} fill priority className="object-cover brightness-50" alt="cover" />
               </div>
             </div>
             <div className="absolute flex items-end p-4 h-full">
@@ -153,13 +153,13 @@ const ArticlePage = async ({params}) => {
                   <h1 className="text-5xl lg:text-7xl font-ibara font-semibold text-xmas-primary leading-none hidden md:block">{content.title}</h1>
                   <div className="flex items-center gap-2">
                     <div>
-                      <p className="text-xs text-xmas-secondary font-semibold font-heading uppercase">{content.writer_name}</p>
-                      <p className="text-xs text-xmas-tertiary font-heading">{new Date(content.published_date).toLocaleDateString("id-US", {dateStyle:"long"})}</p>
+                      <p className="text-xs text-xmas-secondary font-semibold font-heading uppercase">{content.writerName}</p>
+                      <p className="text-xs text-xmas-tertiary font-heading">{new Date(content.publishedAt).toLocaleDateString("id-US", {dateStyle:"long"})}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <Contents articleContent={content.content_json} />
+              <Contents articleContent={content.contents} />
             </div>
           </div>
         </div>

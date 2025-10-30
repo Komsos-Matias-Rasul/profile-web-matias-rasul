@@ -66,14 +66,14 @@ const TopCarousell = ({ editionId }) => {
                       <div className="relative">
                         <div className="relative w-full aspect-square bg-xmas-tertiary/25">
                           <Image
-                            src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumb_img}
+                            src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumbImg}
                             alt=""
                             fill
                             className="object-cover brightness-75"
                             />
                         </div >
                         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-xmas-primary/0 to-xmas-primary/75" />
-                        <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`} className="absolute bottom-4 left-4 text-3xl md:text-4xl lg:text-6xl text-xmas-neutral font-ibara font-bold hover:underline">{item.title}</Link>
+                        <Link href={`/zaitun/${item.year}/${item.editionId}/${item.slug}`} className="absolute bottom-4 left-4 text-3xl md:text-4xl lg:text-6xl text-xmas-neutral font-ibara font-bold hover:underline">{item.title}</Link>
                       </div>
                     </SwiperSlide>
                   )
@@ -119,25 +119,25 @@ const TopCarousell = ({ editionId }) => {
                     (currentNews === i ? "-translate-y-3 " : "translate-y-0 ") +
                     " flex flex-col gap-2 transition-transform duration-400"
                     }>
-                    <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`}>
+                    <Link href={`/zaitun/${item.year}/${item.editionId}/${item.slug}`}>
                       <div className={
                         (currentNews === i ? "shadow-lg " : "shadow-none ") +
                         " relative w-full aspect-square bg-xmas-tertiary/25 transition-shadow rounded-lg overflow-hidden"}>
                         <Image
-                          src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumb_img}
+                          src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + item.thumbImg}
                           alt=""
                           fill
                           className="object-cover"
                         />
                       </div>
                     </Link>
-                    <Link href={`/zaitun/${item.edition_year}/${item.edition_id}/${item.slug}`}>
+                    <Link href={`/zaitun/${item.year}/${item.editionId}/${item.slug}`}>
                       <h3 className="text-xl font-ibara font-medium text-xmas-primary line-clamp-3 lg:line-clamp-none">{item.title}</h3>
                     </Link>
                     <div className="flex items-center gap-2">
                       <div>
-                        <p className="text-xs text-xmas-secondary uppercase">{item.writer_name}</p>
-                        <p className="text-xs text-xmas-tertiary">{new Date(item.published_date).toLocaleDateString('id-US', {
+                        <p className="text-xs text-xmas-secondary uppercase">{item.writerName}</p>
+                        <p className="text-xs text-xmas-tertiary">{new Date(item.publishedAt).toLocaleDateString('id-US', {
                           dateStyle: 'long'
                         })}</p>
                       </div>
