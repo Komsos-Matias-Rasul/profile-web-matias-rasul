@@ -27,7 +27,7 @@ const Contents = ({articleContent}) => {
             return (
               <div key={block.id} className="my-8">
                 <Image
-                  src={process.env.NEXT_PUBLIC_BACKEND_URL + block.data.file.url}
+                  src={process.env.GCLOUD_PREFIX + block.data.file.url}
                   alt={block.data.caption}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   height={0}
