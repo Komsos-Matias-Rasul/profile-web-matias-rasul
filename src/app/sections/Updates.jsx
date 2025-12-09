@@ -52,20 +52,12 @@ const UpdatesSection = () => {
           </Swiper>
         </div>
         <div className="flex justify-start md:justify-end w-full md:w-1/2 max-w-[650px]">
-          <div className="p-8 h-full text-white flex flex-col justify-between">
-            {/* <div className="flex md:hidden gap-4 justify-center lg:justify-end pb-5">
-              <Button onPress={slidePrev} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{"<"}</Button>
-              <Button onPress={slideNext} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{">"}</Button>
-            </div> */}
+          <div className="p-8 h-full text-white flex flex-col justify-between w-full">
             <div>
               <h1 className="font-heading text-blue-secondary mb-2 md:mb-4 font-bold tracking-[5px] md:tracking-[10px] text-sm md:text-base">BERITA PAROKI</h1>
               <p className="font-heading text-4xl md:text-5xl font-bold line-clamp-2 mb-2 md:mb-4 leading-normal hover:underline">Loading...</p>
               <p className="line-clamp-5 md:line-clamp-5 text-lg md:text-lg mb-8">Loading...</p>
             </div>
-            {/* <div className="hidden md:flex gap-4 justify-center lg:justify-end pt-5">
-              <Button onPress={slidePrev} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{"<"}</Button>
-              <Button onPress={slideNext} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{">"}</Button>
-            </div> */}
           </div>
         </div>
       </div>
