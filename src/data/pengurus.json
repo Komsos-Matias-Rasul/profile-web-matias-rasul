@@ -6,15 +6,14 @@
         "penguruss": [
             {
                 "koorBidang":[
-                    { "namaKoorBidang": "RD. Aloysius Yus Noron, Pr","jabatanKoorBidang": "Ketua Umum" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/1A.YusNoron%2CPr.webp"},
-                    { "namaKoorBidang": "RD. Silvester Hari Pamungkas, Pr","jabatanKoorBidang": "Ketua 1", "img":"https://storage.googleapis.com/zaitun-dev/pengurus/DPH/2PastorSilvesterHariPamungkas%2CPr.webp" },
+                    { "namaKoorBidang": "Aloysius Yus Noron, Pr","jabatanKoorBidang": "Ketua Umum" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/1A.YusNoron%2CPr.webp"},
+                    { "namaKoorBidang": "Patrick Slamet Widodo, Pr","jabatanKoorBidang": "Ketua 1", "img":"https://storage.googleapis.com/web-samara-storage/pastor-paroki/romo-patrick.webp" },
                     { "namaKoorBidang": "Johanes Hendrie Aripin","jabatanKoorBidang": "Wakil Ketua 1" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/3JohanesHendrieAripin.webp"},
                     { "namaKoorBidang": "Benedictus Hendry Sarwono","jabatanKoorBidang": "Wakil Ketua 2", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/4BenedictusHendrySarwono.webp" },
                     { "namaKoorBidang": "Laurentius Dede Kurniawan Wachjudi","jabatanKoorBidang": "Bendahara 1", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/5LaurentiusDedeKurniawanWachjudi.webp" },
                     { "namaKoorBidang": "Paulin Eva Yuliana","jabatanKoorBidang": "Bendahara 2" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/6PaulinEvaYuliana.webp"},
                     { "namaKoorBidang": "Luisa Dona Amelia Pramana","jabatanKoorBidang": "Sekretaris 1", "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/7LuisaDonaAmeliaPramana.webp" },
-                    { "namaKoorBidang": "Teresa Soiron Inge","jabatanKoorBidang": "Sekretaris 2" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/8TeresaSoironInge.webp"}
-                    
+                    { "namaKoorBidang": "Teresa Soiron Inge","jabatanKoorBidang": "Sekretaris 2" , "img": "https://storage.googleapis.com/zaitun-dev/pengurus/DPH/8TeresaSoironInge.webp"}  
                 ],
                 "image": "/static/dummy.jpg",
                 "seksi": [
