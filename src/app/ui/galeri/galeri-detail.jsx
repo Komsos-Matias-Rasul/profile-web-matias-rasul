@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@heroui/button";
 import Masonry from "react-masonry-css";
 import { useRouter } from "next/navigation";
@@ -45,6 +45,32 @@ export const GaleriDetail = ({ galeri }) => {
 
     const router = useRouter();
 
+    useEffect(() => {
+        if (!isOpen) return;
+      
+        const handleKeyDown = (e) => {
+          if (e.key === "ArrowRight") {
+            handleNext();
+          }
+      
+          if (e.key === "ArrowLeft") {
+            handlePrevious();
+          }
+      
+          if (e.key === "Escape") {
+            setIsOpen(false);
+            setSelectedImageIndex(null);
+          }
+        };
+      
+        window.addEventListener("keydown", handleKeyDown);
+      
+        return () => {
+          window.removeEventListener("keydown", handleKeyDown);
+        };
+      }, [isOpen, selectedImageIndex]);
+      
+
     return (
         <section className="py-12">
             <article className="max-w-4xl mx-auto p-4 lg:p-6 bg-gray-100 shadow-lg border rounded-md">
@@ -73,12 +99,15 @@ export const GaleriDetail = ({ galeri }) => {
                             <Image
                                 src={image.imageUrl}
                                 alt={`Image ${image.id}`}
-                                width={300}
+                                unoptimized={true} 
+                                width={0}
                                 height={0}
+                                sizes="100vw"
                                 className="w-full h-auto rounded-lg shadow-lg object-cover cursor-pointer hover:brightness-75 transition-all"
+                                style={{ width: '100%', height: 'auto' }} 
                                 onClick={() => handlePopup(index)}
                                 placeholder="blur"
-                                blurDataURL="/placeholder.jpg"
+                                blurDataURL="/static/dummy.jpg"
                             />
                         </div>
                     ))}
@@ -92,11 +121,13 @@ export const GaleriDetail = ({ galeri }) => {
                     >
                         <div className="relative">
                             <Image
-                                className="max-w-full max-h-[90vh]  rounded-md"
+                                className="max-w-full max-h-[90vh] rounded-md object-contain"
                                 alt={selectedImage.alt || galeri.title}
                                 src={selectedImage.imageUrl}
-                                width={410}
-                                height={0}
+                                unoptimized={true} 
+                                width={800}
+                                height={600}
+                                style={{ width: 'auto', height: 'auto' }}
                                 onClick={(e) => e.stopPropagation()}
                             />
                             <button

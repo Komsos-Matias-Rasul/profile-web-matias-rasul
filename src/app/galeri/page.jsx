@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"; 
 
 const slugify = (text) => 
   text
@@ -17,7 +17,18 @@ export default function GaleriPage() {
         const fetchGaleri = async () => {
             const response = await fetch("/api/galeri");
             const data = await response.json();
-            setGaleri(data);
+            const sorted = [...data].sort(
+                (a, b) => new Date(b.date) - new Date(a.date)
+            );
+            const normalized = sorted.map((item) => ({
+                ...item,
+                formattedDate: new Date(item.date).toLocaleDateString("id-ID", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                }),
+              }));
+            setGaleri(normalized);
         };
         fetchGaleri();
     }, []);
@@ -77,7 +88,13 @@ function GaleriCard({ item }) {
                 <div className="p-4">
                     <h2 className="text-lg font-semibold mb-2 text-blue-950">{title}</h2>
                     <p className="text-sm text-gray-600 line-clamp-2">{description}</p>
-                    <p className="text-sm text-gray-500 mt-4">{date}</p>
+                    <p className="text-sm text-gray-500 mt-4">
+                        {new Date(date).toLocaleDateString("id-ID", {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                        })}
+                    </p>
                 </div>
             </div>
         </Link>

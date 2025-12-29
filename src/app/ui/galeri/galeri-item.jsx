@@ -10,31 +10,34 @@ const slugify = (text) =>
     .replace(/^-+|-+$/g, '');
 
 export const GaleriItem = ({ item }) => {
+  const firstImage = item.images?.[0]?.imageUrl || "/assets/default-image.png";
   return (
     <>
       <Card
         shadow="sm"
         key={item.id}
-        className="border rounded-md shadow-lg"
+        className="border rounded-md shadow-lg hover:shadow-xl transition-shadow duration-300"
       >
-        <CardBody className="overflow-visible ">
-          <Link href={`/galeri/${slugify(item.title)}`} className="flex w-full">
+        <CardBody className="overflow-visible p-0">
+          <Link href={`/galeri/${slugify(item.title)}`} className="block w-full h-48 relative">
             <Image
-              className="rounded-t-xl md:h-56 rounded hover:scale-105 cursor-pointer transition-all duration-300"
-              layout="responsive"
-              width={16}
-              height={9}
               alt={item.title}
-              src={item.imageUrl}
+              src={firstImage}
+              fill
+              className="object-cover rounded-t-xl hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </Link>
         </CardBody>
-        <CardFooter className="flex-col items-start text-left p-2 gap-2 md:p-3 md:gap-3 lg:p-3 lg:gap-1">
+        <CardFooter className="flex-col items-start text-left p-4 gap-2">
           <Link href={`/galeri/${slugify(item.title)}`}>
-            <b className="text-md md:text-lg lg:text-xl font-bold text-blue-primary hover:underline">{item.title}</b>
+            <b className="text-md md:text-lg lg:text-xl font-bold text-blue-950 hover:underline">
+              {item.title}
+            </b>  
           </Link>
-          <p className="text-sm lg:text-md my-2 ">{item?.description.substring(0, 85)}...</p>
-          <b className="text-xs md:text-sm lg:text-sm text-gray-400">{new Date(item?.date).toLocaleDateString()}</b>
+          <p className="text-xs md:text-sm text-gray-500 mt-2">
+            {item.formattedDate}
+          </p>
         </CardFooter>
       </Card>
     </>
@@ -47,6 +50,7 @@ GaleriItem.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired, 
     date: PropTypes.string.isRequired,
+    formattedDate: PropTypes.string,
     images: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number.isRequired,
