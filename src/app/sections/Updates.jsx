@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@heroui/button"
-import Image from "next/image"
 import { useRef, useState } from "react"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -40,7 +39,7 @@ const UpdatesSection = () => {
             <SwiperSlide key={0}>
               <div className="overflow-hidden">
                 <div className="relative h-[30vh] md:h-[55vh] max-h-[720px] w-full hover:scale-110 transition-transform bg-blue-primary/50">
-                  <Image
+                  <img
                     src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/static/placeholder.jpg"}
                     alt="placeholder"
                     className="object-cover"
@@ -78,7 +77,7 @@ const UpdatesSection = () => {
     setCurrentNews(swiperRef.current?.swiper.activeIndex)
   }
 
-  return (
+  return data.length > 0 && (
     <div>
       <div className="w-full bg-dark-primary text-white flex flex-col min-h-screen md:min-h-min md:flex-row-reverse shadow-lg">
         <div className="w-full md:w-1/2">
@@ -98,7 +97,7 @@ const UpdatesSection = () => {
                   <SwiperSlide key={item.id}>
                     <div className="overflow-hidden">
                       <div className="relative h-[30vh] md:h-[55vh] max-h-[720px] w-full hover:scale-110 transition-transform bg-blue-primary/50">
-                        <Image
+                        <img
                           src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + String(item.thumbImg)}
                           alt={String(item.title)}
                           className="object-cover"
@@ -120,9 +119,9 @@ const UpdatesSection = () => {
             </div>
             <div>
               <h1 className="font-heading text-blue-secondary mb-2 md:mb-4 font-bold tracking-[5px] md:tracking-[10px] text-sm md:text-base">BERITA PAROKI</h1>
-              <Link href={`/berita/${data[currentNews].id}`} className="font-heading text-4xl md:text-5xl font-bold line-clamp-2 mb-2 md:mb-4 leading-normal hover:underline">{data[currentNews].title}</Link>
-              <p className="line-clamp-5 md:line-clamp-5 text-lg md:text-lg mb-8">{data[currentNews].descriptions}</p>
-              <Link href={`/berita/${data[currentNews].id}`} className="bg-blue-secondary p-2 rounded-lg">Selengkapnya</Link>
+              <Link href={`/berita/${data[currentNews]?.id}`} className="font-heading text-4xl md:text-5xl font-bold line-clamp-2 mb-2 md:mb-4 leading-normal hover:underline">{data[currentNews]?.title}</Link>
+              <p className="line-clamp-5 md:line-clamp-5 text-lg md:text-lg mb-8">{data[currentNews]?.descriptions}</p>
+              <Link href={`/berita/${data[currentNews]?.id}`} className="bg-blue-secondary p-2 rounded-lg">Selengkapnya</Link>
             </div>
             <div className="hidden md:flex gap-4 justify-center lg:justify-end pt-5">
               <Button onPress={slidePrev} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{"<"}</Button>

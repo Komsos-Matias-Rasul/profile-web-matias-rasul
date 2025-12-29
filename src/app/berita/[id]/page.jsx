@@ -7,6 +7,9 @@ export default async function BeritaDetailPage({ params }) {
   const jsonData = await res.json()
   if (res.status === 404) {
     return <p className="text-9xl">NotFOUND</p>
+}
+if (!res.status != 200) {
+      return <p className="text-9xl">error bang</p>
   }
   const berita = jsonData.data
   const details = JSON.parse(berita.details)
