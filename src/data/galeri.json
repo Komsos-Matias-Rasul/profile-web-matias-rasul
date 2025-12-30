@@ -140,10 +140,10 @@
             {"id": 903, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal3_2025.webp"},
             {"id": 904, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal4_2025.webp"},
             {"id": 905, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal5_2025.webp"},
-            {"id": 906, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal6_2025.webp"},
-            {"id": 907, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal7_2025.webp"},
-            {"id": 908, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal8_2025.webp"},
-            {"id": 909, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal9_2025.webp"}
+            {"id": 906, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal7_2025.webp"},
+            {"id": 907, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal6_2025.webp"},
+            {"id": 908, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal9_2025.webp"},
+            {"id": 909, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal8_2025.webp"}
         ]
     },
     {
@@ -156,9 +156,11 @@
             {"id": 102, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal2_2025.webp"},
             {"id": 103, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal3_2025.webp"},
             {"id": 104, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal4_2025.webp"},
-            {"id": 105, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal5_2025.webp"},
+            
+            {"id": 105, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal7_2025.webp"},
             {"id": 106, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal6_2025.webp"},
-            {"id": 107, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal7_2025.webp"},
+
+            {"id": 107, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal5_2025.webp"},
             {"id": 108, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal8_2025.webp"},
             {"id": 109, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal9_2025.webp"},
             {"id": 110, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal10_2025.webp"},
