@@ -42,9 +42,8 @@ const UpdatesSection = () => {
                   <img
                     src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/static/placeholder.jpg"}
                     alt="placeholder"
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 75vw"
-                    fill />
+                    className="object-cover w-full h-full"
+                    sizes="(max-width: 768px) 100vw, 75vw" />
                 </div>
               </div>
             </SwiperSlide>
@@ -100,9 +99,9 @@ const UpdatesSection = () => {
                         <img
                           src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + String(item.thumbImg)}
                           alt={String(item.title)}
-                          className="object-cover"
+                          className="object-cover w-full h-full"
                           sizes="(max-width: 768px) 100vw, 75vw"
-                          fill />
+                          />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -112,7 +111,7 @@ const UpdatesSection = () => {
           </Swiper>
         </div>
         <div className="flex justify-start md:justify-end w-full md:w-1/2 max-w-[650px]">
-          <div className="p-8 h-full text-white flex flex-col justify-between">
+          <div className="p-8 h-full text-white flex flex-col justify-between w-full">
             <div className="flex md:hidden gap-4 justify-center lg:justify-end pb-5">
               <Button onPress={slidePrev} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{"<"}</Button>
               <Button onPress={slideNext} disableRipple isIconOnly variant="ghost" radius="full" color="primary" size="sm">{">"}</Button>

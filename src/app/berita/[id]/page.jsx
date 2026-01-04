@@ -7,12 +7,13 @@ export default async function BeritaDetailPage({ params }) {
   const jsonData = await res.json()
   if (res.status === 404) {
     return <p className="text-9xl">NotFOUND</p>
-}
-if (!res.status != 200) {
-      return <p className="text-9xl">error bang</p>
+  }
+  if (res.status !== 200) {
+    return <p className="text-9xl">error bang</p>
   }
   const berita = jsonData.data
-  const details = JSON.parse(berita.details)
+  console.log(berita)
+  
 
   return (
     <section className="py-12">
@@ -26,14 +27,7 @@ if (!res.status != 200) {
           <div className="my-10">
               <div className="text-lg text-blue-secondary font-bold my-1">{berita.section}</div>
               <h2 className="text-4xl font-bold text-blue-primary my-1">{berita.title}</h2>
-              {
-                  details.blocks.map((block, id) => (
-                      <div key={id} dangerouslySetInnerHTML={{
-                          __html: block.data.text,
-                      }}>
-                      </div>
-                  ))
-              }
+              <p className="whitespace-break-spaces">{berita.details}</p>
           </div>
       </article>
   </section>
