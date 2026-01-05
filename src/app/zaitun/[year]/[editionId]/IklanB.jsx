@@ -7,8 +7,10 @@ import 'swiper/css'
 import { PopUpAdModal } from "@/components/PopUpAdModal"
 
 const ads = [
-  "/ads/B1.webp",
-  "/ads/B2.webp",
+  "/ads/2025/natal/B1.webp",
+  "/ads/2025/natal/B2.webp",
+  "/ads/2025/natal/B3.webp",
+  "/ads/2025/natal/B4.webp"
 ]
 
 const IklanB = () => {

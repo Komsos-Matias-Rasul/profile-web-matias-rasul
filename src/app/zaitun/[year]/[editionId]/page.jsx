@@ -11,7 +11,7 @@ import { AdCarouselConstructor } from "@/helpers/ads";
 import LogoSection from "@/components/RunningLogo";
 
 const Sponsors = () => {
-  const AD_DIR = "/ads/2025/"
+  const AD_DIR = "/ads/2025/natal/"
 
   return (
     <>
@@ -20,7 +20,7 @@ const Sponsors = () => {
       {/* Iklan D */}
       <div className="grid grid-cols-3 gap-8 mb-8 mx-auto justify-center w-4/5">
         {
-          [1,2,3,4,5,6,7,8,9,10].map((adNumber) => {
+          [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((adNumber) => {
             const image = `${AD_DIR}D${adNumber}.webp`
           return (
             <PopUpAdModal key={adNumber} img={process.env.GCLOUD_PREFIX + image} width={80}/>
@@ -34,21 +34,15 @@ const Sponsors = () => {
 }
 
 const adsA = [
-  "/ads/2025/A1.webp",
-  "/ads/2025/A2.webp",
-  "/ads/2025/A3.webp",
-  "/ads/2025/A4.webp",
-  "/ads/2025/A5.webp",
+  "/ads/2025/natal/A1.webp"
 ]
 
 const adsC = [
-  "/ads/2025/C1.webp",
-  "/ads/2025/C2.webp",
-  "/ads/2025/C3.webp",
-  "/ads/2025/C4.webp",
-  "/ads/2025/C5.webp",
-  "/ads/2025/C6.webp",
-  "/ads/2025/C7.webp",
+  "/ads/2025/natal/C1.webp",
+  "/ads/2025/natal/C2.webp",
+  "/ads/2025/natal/C3.webp",
+  "/ads/2025/natal/C4.webp",
+  "/ads/2025/natal/C5.webp"
 ]
 
 const ZaitunPage = async ({params}) => {
