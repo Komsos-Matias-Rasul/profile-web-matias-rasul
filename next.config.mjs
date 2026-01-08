@@ -38,7 +38,7 @@ const nextConfig = {
     return [
       {
         source: "/zaitun",
-        destination: "/zaitun/2025/9",
+        destination: "/zaitun/2025/10",
         permanent: false
       }
     ]
