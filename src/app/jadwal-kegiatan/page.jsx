@@ -120,9 +120,9 @@ const JadwalKegiatanRutin = () => {
                             <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">BINA IMAN REMAJA</h2>
                         </div>
                         <div className="text-center ">
-                            <h3 className="font-semibold text-lg">Sabtu, pukul 16.00</h3>
+                            <h3 className="font-semibold text-lg">Minggu, pukul 10.30 - 12.00</h3>
                             <ul className="list-disc list-inside list-none mb-3">
-                                <li>di Ruang Mediatrix</li>
+                                <li>di Ruang Mediatrix 1-3</li>
                             </ul>
                         </div>
                     </div>
