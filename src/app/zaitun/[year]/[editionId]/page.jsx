@@ -20,7 +20,8 @@ const Sponsors = () => {
       {/* Iklan D */}
       <div className="grid grid-cols-3 gap-8 mb-8 mx-auto justify-center w-4/5">
         {
-          [1,2,3,16,4,5,8,6,7,9,10,17,11,18,19,12,13,14,15].map((adNumber) => {
+          [1,3,7,9,10,18,19,12,13].map((adNumber) => {
+            // E: 2,   16,4,5,8,6,   17,11,   14,15
             const image = `${AD_DIR}D${adNumber}.webp`
           return (
             <PopUpAdModal key={adNumber} img={process.env.GCLOUD_PREFIX + image} width={80}/>
