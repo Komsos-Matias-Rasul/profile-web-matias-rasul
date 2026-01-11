@@ -84,10 +84,9 @@ const JadwalKegiatanRutin = () => {
                             <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">BINA IMAN ANAK</h2>
                         </div>
                         <div className="text-center ">
-                            <h3 className="font-semibold text-lg">Minggu, pukul 08.30</h3>
+                            <h3 className="font-semibold text-lg">Minggu, pukul 07.30 - 08.30</h3>
                             <ul className="list-disc list-inside list-none mb-3">
-                                <li>diruang Mediatrix 1-3, Mater Dei, Regina Pacis <br />
-                                    Minggu pertama libur</li>
+                                <li>di ruang Mediatrix 1 & 3, dan Yohanes Paulus II <br/> (Minggu pertama setiap bulan, BIA libur)</li>
                             </ul>
                         </div>
                     </div>
