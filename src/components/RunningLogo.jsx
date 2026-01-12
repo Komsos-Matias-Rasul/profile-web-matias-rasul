@@ -48,6 +48,7 @@ const SPONSORS_LOGO_3 = [
   "/ads/2025/natal/logo32.webp",
   "/ads/2025/natal/logo33.webp",
   "/ads/2025/natal/logo34.webp",
+  "/ads/2025/natal/logo35.webp",
 ]
 
 
