@@ -111,7 +111,7 @@ export default function FotoTerbaruSection({ params }) {
           {allImages.map((image, index) => (
             <div key={image.id || index} className="mb-4 relative">
               <Image
-                src={image.imageUrl}
+                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + image.imageUrl}
                 alt={image.alt || "Galeri Image"}
                 unoptimized={true} 
                 width={400}
@@ -135,7 +135,7 @@ export default function FotoTerbaruSection({ params }) {
         >
           <div className="relative max-w-[90vw] max-h-[90vh]">
             <Image
-              src={selectedImage.imageUrl}
+              src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + selectedImage.imageUrl}
               alt={selectedImage.alt || "Preview"}
               unoptimized={true} 
               width={800}

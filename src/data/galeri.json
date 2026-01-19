@@ -1,174 +1,169 @@
 [
-    {
-        "id": 1,
-        "title": "Kamis Putih 2024",
-        "description": "Dokumentasi Misa Kamis Putih 2024",
-        "date": "2024-04-09",
-        "images": [
-            {"id": 101, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih1_2024.webp"},
-            {"id": 102, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih2_2024.webp"},
-            {"id": 103, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih3_2024.webp"},
-            {"id": 104, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih4_2024.webp"},
-            {"id": 105, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih5_2024.webp"},
-            {"id": 106, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/KamisPutih6_2024.webp"}
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Tablo Jalan Salib 2024",
-        "description": "Tablo Visualisasi Kisah Sengsara Yesus, diselenggarakan oleh OMK Wilayah 10",
-        "date": "2024-04-10",
-        "images": [
-            {"id": 201, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo3_2024.webp"},
-            {"id": 202, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo2_2024.webp"},
-            {"id": 203, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo1_2024.webp"},
-            {"id": 204, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo4_2024.webp"},
-            {"id": 205, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo5_2024.webp"},
-            {"id": 206, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/paskah-2024/Tablo6_2024.webp"}
-        ]
-    }, 
-    {
-        "id": 3,
-        "title": "Minggu Palma 2025",
-        "description": "Dokumentasi Misa Minggu Palma 2025",
-        "date": "2025-04-04",
-        "images": [
-            {"id": 301, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma1_2025.webp"},
-            {"id": 302, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma2_2025.webp"},
-            {"id": 303, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma3_2025.webp"},
-            {"id": 304, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma4_2025.webp"},
-            {"id": 305, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma5_2025.webp"},
-            {"id": 306, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPalma6_2025.webp"}
-        ]
-    }, 
-    {
-        "id": 4,
-        "title": "Kamis Putih 2025",
-        "description": "Dokumentasi Misa Kamis Putih 2025",
-        "date": "2025-04-17",
-        "images": [
-            {"id": 401, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih1_2025.webp"},
-            {"id": 402, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih2_2025.webp"},
-            {"id": 403, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih3_2025.webp"},
-            {"id": 404, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih4_2025.webp"},
-            {"id": 405, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih5_2025.webp"},
-            {"id": 406, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih6_2025.webp"},
-            {"id": 407, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/KamisPutih7_2025.webp"}
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Jumat Agung 2025",
-        "description": "Dokumentasi Misa Jumat Agung 2025",
-        "date": "2025-04-18",
-        "images": [
-            {"id": 501, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung1_2025.webp"},
-            {"id": 502, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung2_2025.webp"},
-            {"id": 503, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung3_2025.webp"},
-            {"id": 504, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung4_2025.webp"},
-            {"id": 505, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung5_2025.webp"},
-            {"id": 506, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung6_2025.webp"},
-            {"id": 507, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung7_2025.webp"},
-            {"id": 508, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung8_2025.webp"},
-            {"id": 509, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung9_2025.webp"},
-            {"id": 510, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung10_2025.webp"},
-            {"id": 511, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung11_2025.webp"},
-            {"id": 512, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/JumatAgung12_2025.webp"}
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Tablo Jalan Salib 2025",
-        "description": "Dokumentasi Tablo Jalan Salib 2025",
-        "date": "2025-04-18",
-        "images": [
-            {"id": 601, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo1_2025.webp"},
-            {"id": 602, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo2_2025.webp"},
-            {"id": 603, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo3_2025.webp"},
-            {"id": 604, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo4_2025.webp"},
-            {"id": 605, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo5_2025.webp"},
-            {"id": 606, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo6_2025.webp"},
-            {"id": 607, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo7_2025.webp"},
-            {"id": 608, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo8_2025.webp"},
-            {"id": 609, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo9_2025.webp"},
-            {"id": 610, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo10_2025.webp"},
-            {"id": 611, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo11_2025.webp"},
-            {"id": 612, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo12_2025.webp"},
-            {"id": 613, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/Tablo13_2025.webp"}
-           
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Sabtu Suci 2025",
-        "description": "Dokumentasi Misa Sabtu Suci 2025",
-        "date": "2025-04-19",
-        "images": [
-            {"id": 701, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci1_2025.webp"},
-            {"id": 702, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci2_2025.webp"},
-            {"id": 703, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci3_2025.webp"},
-            {"id": 704, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci4_2025.webp"},
-            {"id": 705, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci5_2025.webp"},
-            {"id": 706, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci6_2025.webp"},
-            {"id": 707, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/SabtuSuci7_2025.webp"}
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Minggu Paskah 2025",
-        "description": "Dokumentasi Misa Minggu Paskah 2025",
-        "date": "2025-04-20",
-        "images": [
-            {"id": 801, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah1_2025.webp"},
-            {"id": 802, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah2_2025.webp"},
-            {"id": 803, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah3_2025.webp"},
-            {"id": 804, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah4_2025.webp"},
-            {"id": 805, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah5_2025.webp"},
-            {"id": 806, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah6_2025.webp"},
-            {"id": 807, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MingguPaskah7_2025.webp"}
-        
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Malam Natal 2025",
-        "description": "Dokumentasi Misa Malam Natal 2025",
-        "date": "2025-12-24",
-        "images": [
-            {"id": 901, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal1_2025.webp"},
-            {"id": 902, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal2_2025.webp"},
-            {"id": 903, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal3_2025.webp"},
-            {"id": 904, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal4_2025.webp"},
-            {"id": 905, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal5_2025.webp"},
-            {"id": 906, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal7_2025.webp"},
-            {"id": 907, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal6_2025.webp"},
-            {"id": 908, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal9_2025.webp"},
-            {"id": 909, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MalamNatal8_2025.webp"}
-        ]
-    },
-    {
-        "id": 10,
-        "title": "Hari Natal 2025",
-        "description": "Dokumentasi Misa Hari Natal 2025",
-        "date": "2025-12-25",
-        "images": [
-            {"id": 101, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal1_2025.webp"},
-            {"id": 102, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal2_2025.webp"},
-            {"id": 103, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal3_2025.webp"},
-            {"id": 104, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal4_2025.webp"},
-            
-            {"id": 105, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal7_2025.webp"},
-            {"id": 106, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal6_2025.webp"},
-
-            {"id": 107, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal5_2025.webp"},
-            {"id": 108, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal8_2025.webp"},
-            {"id": 109, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal9_2025.webp"},
-            {"id": 110, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal10_2025.webp"},
-            {"id": 111, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal11_2025.webp"},
-            {"id": 112, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal12_2025.webp"},
-            {"id": 113, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal13_2025.webp"},
-            {"id": 114, "imageUrl": "https://storage.googleapis.com/zaitun-dev/galeri/Paskah-2025/MisaNatal14_2025.webp"}
-        ]
-    }
-    
+  {
+    "id": 1,
+    "title": "Kamis Putih 2024",
+    "description": "Dokumentasi Misa Kamis Putih 2024",
+    "date": "2024-04-09",
+    "images": [
+      { "id": 101, "imageUrl": "/galeri/paskah-2024/KamisPutih1_2024.webp" },
+      { "id": 102, "imageUrl": "/galeri/paskah-2024/KamisPutih2_2024.webp" },
+      { "id": 103, "imageUrl": "/galeri/paskah-2024/KamisPutih3_2024.webp" },
+      { "id": 104, "imageUrl": "/galeri/paskah-2024/KamisPutih4_2024.webp" },
+      { "id": 105, "imageUrl": "/galeri/paskah-2024/KamisPutih5_2024.webp" },
+      { "id": 106, "imageUrl": "/galeri/paskah-2024/KamisPutih6_2024.webp" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Tablo Jalan Salib 2024",
+    "description": "Tablo Visualisasi Kisah Sengsara Yesus, diselenggarakan oleh OMK Wilayah 10",
+    "date": "2024-04-10",
+    "images": [
+      { "id": 201, "imageUrl": "/galeri/paskah-2024/Tablo3_2024.webp" },
+      { "id": 202, "imageUrl": "/galeri/paskah-2024/Tablo2_2024.webp" },
+      { "id": 203, "imageUrl": "/galeri/paskah-2024/Tablo1_2024.webp" },
+      { "id": 204, "imageUrl": "/galeri/paskah-2024/Tablo4_2024.webp" },
+      { "id": 205, "imageUrl": "/galeri/paskah-2024/Tablo5_2024.webp" },
+      { "id": 206, "imageUrl": "/galeri/paskah-2024/Tablo6_2024.webp" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Minggu Palma 2025",
+    "description": "Dokumentasi Misa Minggu Palma 2025",
+    "date": "2025-04-04",
+    "images": [
+      { "id": 301, "imageUrl": "/galeri/Paskah-2025/MingguPalma1_2025.webp" },
+      { "id": 302, "imageUrl": "/galeri/Paskah-2025/MingguPalma2_2025.webp" },
+      { "id": 303, "imageUrl": "/galeri/Paskah-2025/MingguPalma3_2025.webp" },
+      { "id": 304, "imageUrl": "/galeri/Paskah-2025/MingguPalma4_2025.webp" },
+      { "id": 305, "imageUrl": "/galeri/Paskah-2025/MingguPalma5_2025.webp" },
+      { "id": 306, "imageUrl": "/galeri/Paskah-2025/MingguPalma6_2025.webp" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Kamis Putih 2025",
+    "description": "Dokumentasi Misa Kamis Putih 2025",
+    "date": "2025-04-17",
+    "images": [
+      { "id": 401, "imageUrl": "/galeri/Paskah-2025/KamisPutih1_2025.webp" },
+      { "id": 402, "imageUrl": "/galeri/Paskah-2025/KamisPutih2_2025.webp" },
+      { "id": 403, "imageUrl": "/galeri/Paskah-2025/KamisPutih3_2025.webp" },
+      { "id": 404, "imageUrl": "/galeri/Paskah-2025/KamisPutih4_2025.webp" },
+      { "id": 405, "imageUrl": "/galeri/Paskah-2025/KamisPutih5_2025.webp" },
+      { "id": 406, "imageUrl": "/galeri/Paskah-2025/KamisPutih6_2025.webp" },
+      { "id": 407, "imageUrl": "/galeri/Paskah-2025/KamisPutih7_2025.webp" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Jumat Agung 2025",
+    "description": "Dokumentasi Misa Jumat Agung 2025",
+    "date": "2025-04-18",
+    "images": [
+      { "id": 501, "imageUrl": "/galeri/Paskah-2025/JumatAgung1_2025.webp" },
+      { "id": 502, "imageUrl": "/galeri/Paskah-2025/JumatAgung2_2025.webp" },
+      { "id": 503, "imageUrl": "/galeri/Paskah-2025/JumatAgung3_2025.webp" },
+      { "id": 504, "imageUrl": "/galeri/Paskah-2025/JumatAgung4_2025.webp" },
+      { "id": 505, "imageUrl": "/galeri/Paskah-2025/JumatAgung5_2025.webp" },
+      { "id": 506, "imageUrl": "/galeri/Paskah-2025/JumatAgung6_2025.webp" },
+      { "id": 507, "imageUrl": "/galeri/Paskah-2025/JumatAgung7_2025.webp" },
+      { "id": 508, "imageUrl": "/galeri/Paskah-2025/JumatAgung8_2025.webp" },
+      { "id": 509, "imageUrl": "/galeri/Paskah-2025/JumatAgung9_2025.webp" },
+      { "id": 510, "imageUrl": "/galeri/Paskah-2025/JumatAgung10_2025.webp" },
+      { "id": 511, "imageUrl": "/galeri/Paskah-2025/JumatAgung11_2025.webp" },
+      { "id": 512, "imageUrl": "/galeri/Paskah-2025/JumatAgung12_2025.webp" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Tablo Jalan Salib 2025",
+    "description": "Dokumentasi Tablo Jalan Salib 2025",
+    "date": "2025-04-18",
+    "images": [
+      { "id": 601, "imageUrl": "/galeri/Paskah-2025/Tablo1_2025.webp" },
+      { "id": 602, "imageUrl": "/galeri/Paskah-2025/Tablo2_2025.webp" },
+      { "id": 603, "imageUrl": "/galeri/Paskah-2025/Tablo3_2025.webp" },
+      { "id": 604, "imageUrl": "/galeri/Paskah-2025/Tablo4_2025.webp" },
+      { "id": 605, "imageUrl": "/galeri/Paskah-2025/Tablo5_2025.webp" },
+      { "id": 606, "imageUrl": "/galeri/Paskah-2025/Tablo6_2025.webp" },
+      { "id": 607, "imageUrl": "/galeri/Paskah-2025/Tablo7_2025.webp" },
+      { "id": 608, "imageUrl": "/galeri/Paskah-2025/Tablo8_2025.webp" },
+      { "id": 609, "imageUrl": "/galeri/Paskah-2025/Tablo9_2025.webp" },
+      { "id": 610, "imageUrl": "/galeri/Paskah-2025/Tablo10_2025.webp" },
+      { "id": 611, "imageUrl": "/galeri/Paskah-2025/Tablo11_2025.webp" },
+      { "id": 612, "imageUrl": "/galeri/Paskah-2025/Tablo12_2025.webp" },
+      { "id": 613, "imageUrl": "/galeri/Paskah-2025/Tablo13_2025.webp" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Sabtu Suci 2025",
+    "description": "Dokumentasi Misa Sabtu Suci 2025",
+    "date": "2025-04-19",
+    "images": [
+      { "id": 701, "imageUrl": "/galeri/Paskah-2025/SabtuSuci1_2025.webp" },
+      { "id": 702, "imageUrl": "/galeri/Paskah-2025/SabtuSuci2_2025.webp" },
+      { "id": 703, "imageUrl": "/galeri/Paskah-2025/SabtuSuci3_2025.webp" },
+      { "id": 704, "imageUrl": "/galeri/Paskah-2025/SabtuSuci4_2025.webp" },
+      { "id": 705, "imageUrl": "/galeri/Paskah-2025/SabtuSuci5_2025.webp" },
+      { "id": 706, "imageUrl": "/galeri/Paskah-2025/SabtuSuci6_2025.webp" },
+      { "id": 707, "imageUrl": "/galeri/Paskah-2025/SabtuSuci7_2025.webp" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Minggu Paskah 2025",
+    "description": "Dokumentasi Misa Minggu Paskah 2025",
+    "date": "2025-04-20",
+    "images": [
+      { "id": 801, "imageUrl": "/galeri/Paskah-2025/MingguPaskah1_2025.webp" },
+      { "id": 802, "imageUrl": "/galeri/Paskah-2025/MingguPaskah2_2025.webp" },
+      { "id": 803, "imageUrl": "/galeri/Paskah-2025/MingguPaskah3_2025.webp" },
+      { "id": 804, "imageUrl": "/galeri/Paskah-2025/MingguPaskah4_2025.webp" },
+      { "id": 805, "imageUrl": "/galeri/Paskah-2025/MingguPaskah5_2025.webp" },
+      { "id": 806, "imageUrl": "/galeri/Paskah-2025/MingguPaskah6_2025.webp" },
+      { "id": 807, "imageUrl": "/galeri/Paskah-2025/MingguPaskah7_2025.webp" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Malam Natal 2025",
+    "description": "Dokumentasi Misa Malam Natal 2025",
+    "date": "2025-12-24",
+    "images": [
+      { "id": 901, "imageUrl": "/galeri/Paskah-2025/MalamNatal1_2025.webp" },
+      { "id": 902, "imageUrl": "/galeri/Paskah-2025/MalamNatal2_2025.webp" },
+      { "id": 903, "imageUrl": "/galeri/Paskah-2025/MalamNatal3_2025.webp" },
+      { "id": 904, "imageUrl": "/galeri/Paskah-2025/MalamNatal4_2025.webp" },
+      { "id": 905, "imageUrl": "/galeri/Paskah-2025/MalamNatal5_2025.webp" },
+      { "id": 906, "imageUrl": "/galeri/Paskah-2025/MalamNatal7_2025.webp" },
+      { "id": 907, "imageUrl": "/galeri/Paskah-2025/MalamNatal6_2025.webp" },
+      { "id": 908, "imageUrl": "/galeri/Paskah-2025/MalamNatal9_2025.webp" },
+      { "id": 909, "imageUrl": "/galeri/Paskah-2025/MalamNatal8_2025.webp" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Hari Natal 2025",
+    "description": "Dokumentasi Misa Hari Natal 2025",
+    "date": "2025-12-25",
+    "images": [
+      { "id": 101, "imageUrl": "/galeri/Paskah-2025/MisaNatal1_2025.webp" },
+      { "id": 102, "imageUrl": "/galeri/Paskah-2025/MisaNatal2_2025.webp" },
+      { "id": 103, "imageUrl": "/galeri/Paskah-2025/MisaNatal3_2025.webp" },
+      { "id": 104, "imageUrl": "/galeri/Paskah-2025/MisaNatal4_2025.webp" },
+      { "id": 105, "imageUrl": "/galeri/Paskah-2025/MisaNatal7_2025.webp" },
+      { "id": 106, "imageUrl": "/galeri/Paskah-2025/MisaNatal6_2025.webp" },
+      { "id": 107, "imageUrl": "/galeri/Paskah-2025/MisaNatal5_2025.webp" },
+      { "id": 108, "imageUrl": "/galeri/Paskah-2025/MisaNatal8_2025.webp" },
+      { "id": 109, "imageUrl": "/galeri/Paskah-2025/MisaNatal9_2025.webp" },
+      { "id": 110, "imageUrl": "/galeri/Paskah-2025/MisaNatal10_2025.webp" },
+      { "id": 111, "imageUrl": "/galeri/Paskah-2025/MisaNatal11_2025.webp" },
+      { "id": 112, "imageUrl": "/galeri/Paskah-2025/MisaNatal12_2025.webp" },
+      { "id": 113, "imageUrl": "/galeri/Paskah-2025/MisaNatal13_2025.webp" },
+      { "id": 114, "imageUrl": "/galeri/Paskah-2025/MisaNatal14_2025.webp" }
+    ]
+  }
 ]
