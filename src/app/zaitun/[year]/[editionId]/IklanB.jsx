@@ -10,7 +10,25 @@ const ads = [
   "/ads/2025/natal/B1.webp",
   "/ads/2025/natal/B2.webp",
   "/ads/2025/natal/B3.webp",
-  "/ads/2025/natal/B4.webp"
+  "/ads/2025/natal/B4.webp",
+  "/ads/2025/natal/sponsor1.webp",
+  "/ads/2025/natal/sponsor2.webp",
+  "/ads/2025/natal/sponsor3.webp",
+  "/ads/2025/natal/sponsor4.webp",
+  "/ads/2025/natal/sponsor5.webp",
+  "/ads/2025/natal/sponsor6.webp",
+  "/ads/2025/natal/sponsor7.webp",
+  "/ads/2025/natal/sponsor8.webp",
+  "/ads/2025/natal/sponsor9.webp",
+  "/ads/2025/natal/sponsor10.webp",
+  "/ads/2025/natal/sponsor11.webp",
+  "/ads/2025/natal/sponsor12.webp",
+  "/ads/2025/natal/sponsor13.webp",
+  "/ads/2025/natal/sponsor14.webp",
+  "/ads/2025/natal/sponsor15.webp",
+  "/ads/2025/natal/sponsor16.webp",
+  "/ads/2025/natal/sponsor17.webp",
+  "/ads/2025/natal/sponsor18.webp",
 ]
 
 const IklanB = () => {
