@@ -23,7 +23,7 @@ export const PengurusItem = ({ item }) => {
                         width={300} 
                         height={290}
                         alt={item.namaBidang}
-                        src={item.imageBidang}
+                        src={`${process.env.NEXT_PUBLIC_GCLOUD_PREFIX}${item.imageBidang}`}
                     />
                 </CardBody>
                 <hr className="border-gray-300" />

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "namaBidang": "Dewan Paroki Harian",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/DPH.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -87,7 +87,7 @@
     {
         "id": 2,
         "namaBidang": "Bidang Peribadatan",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Peribadatan.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -169,7 +169,7 @@
     {
         "id": 3,
         "namaBidang": "Bidang Pewartaan",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Pewartaan.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -252,7 +252,7 @@
     {
         "id": 4,
         "namaBidang": "Bidang Pelayanan",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Pelayanan.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -329,7 +329,7 @@
     {
         "id": 5,
         "namaBidang": "Bidang Persekutuan",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Persekutuan.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -358,7 +358,7 @@
     {
         "id": 6,
         "namaBidang": "Bidang Kesaksian",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Kesaksian.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -404,7 +404,7 @@
     {
         "id": 7,
         "namaBidang": "Bidang Pelatihan dan Pengembangan Paroki",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Pelatihan_dan_Pengembangan_Paroki.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -432,7 +432,7 @@
     {
         "id": 8,
         "namaBidang": "Bidang Kategorial",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Kategorial.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -497,7 +497,7 @@
     {
         "id": 9,
         "namaBidang": "Bidang Kepemudaan",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Kepemudaan.webp",
         "penguruss": [
             {
                 "koorBidang":[
@@ -516,10 +516,12 @@
             }
         ]
     },
+
+    
     {
         "id": 10,
         "namaBidang": "Bidang Pastoral",
-        "imageBidang": "/static/dummy.jpg",
+        "imageBidang": "/pengurus/Bidang_Pastoral.webp",
         "penguruss": [
             {
                 "image": "/static/dummy.jpg",
