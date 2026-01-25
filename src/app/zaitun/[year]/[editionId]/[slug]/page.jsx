@@ -55,6 +55,10 @@ const Contents = ({articleContent}) => {
   )
 }
 
+const adsF = [
+  "/ads/2025/natal/F1.webp"
+]
+
 const ArticlePage = async ({params}) => {
   const param = await params
   const {year, editionId, slug} = param
@@ -77,6 +81,7 @@ const ArticlePage = async ({params}) => {
       <div>Error</div>
     )
   }
+  const adFCarousels = AdCarouselConstructor(adsF, 3)
   return (
     <div className="min-h-screen">
       <div className="flex">
@@ -160,6 +165,15 @@ const ArticlePage = async ({params}) => {
                 </div>
               </div>
               <Contents articleContent={content.contents} />
+              <div className="flex flex-row justify-center w-[100%] m-auto mb-20">
+                {
+                  adFCarousels?.map((_, i) => (
+                    <div key={i} className="w-1/2">
+                      <AdCarousell ads={adFCarousels[i]}/>
+                    </div>
+                  ))
+                }
+              </div>
             </div>
           </div>
         </div>
