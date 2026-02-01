@@ -62,7 +62,7 @@ const adsF = [
 const ArticlePage = async ({params}) => {
   const param = await params
   const {year, editionId, slug} = param
-  let content, adCarousels
+  let content, adCarousels, adFCarousels
   try {
     const res = await fetch(`${process.env.BACKEND_URL}/api/articles/${year}/${editionId}/${slug}`)
     if (!res.ok) {
@@ -74,6 +74,10 @@ const ArticlePage = async ({params}) => {
     if (adsJson?.side) {
       adCarousels = AdCarouselConstructor(adsJson.side, 3)
     }
+    if (adsJson?.below) {
+      const sliderAmount = adsJson?.below.length >= 3 ? 3 : adsJson?.below.length
+      adFCarousels = AdCarouselConstructor(adsF, sliderAmount)
+    }
   }
   catch (err) {
     console.error(err)
@@ -81,7 +85,6 @@ const ArticlePage = async ({params}) => {
       <div>Error</div>
     )
   }
-  const adFCarousels = AdCarouselConstructor(adsF, 3)
   return (
     <div className="min-h-screen">
       <div className="flex">
@@ -125,7 +128,13 @@ const ArticlePage = async ({params}) => {
           <div className="relative w-full min-h-screen md:min-h-min block md:hidden">
             <div className="absolute size-full">
               <div className="relative w-full h-screen">
-                <Image sizes="(max-width: 768px) 100vw, 0vw" src={process.env.GCLOUD_PREFIX + content.coverImg} fill priority className="object-cover brightness-50" alt="cover" />
+                <Image
+                  sizes="(max-width: 768px) 100vw, 0vw"
+                  src={process.env.GCLOUD_PREFIX + content.coverImg}
+                  fill
+                  priority
+                  className="object-cover brightness-50"
+                  alt="cover" />
               </div>
             </div>
             <div className="absolute flex items-end p-4 h-full">
