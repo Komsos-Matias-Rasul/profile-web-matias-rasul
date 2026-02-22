@@ -97,7 +97,7 @@ export const GaleriDetail = ({ galeri }) => {
                             className="relative mb-4"
                         >
                             <Image
-                                src={image.imageUrl}
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + image.imageUrl}
                                 alt={`Image ${image.id}`}
                                 unoptimized={true} 
                                 width={0}

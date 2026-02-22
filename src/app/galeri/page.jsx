@@ -72,7 +72,7 @@ export default function GaleriPage() {
 
 function GaleriCard({ item }) {
     const { title, description, date, images } = item;
-    const firstImage = images[0]?.imageUrl || "/assets/default-image.png";
+    const firstImage = process.env.NEXT_PUBLIC_GCLOUD_PREFIX + images[0]?.imageUrl || "/assets/default-image.png";
 
     return (
         <Link href={`/galeri/${slugify(item.title)}`} className="flex w-full ">
