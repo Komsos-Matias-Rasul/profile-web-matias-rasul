@@ -123,7 +123,7 @@ export const GaleriDetail = ({ galeri }) => {
                             <Image
                                 className="max-w-full max-h-[90vh] rounded-md object-contain"
                                 alt={selectedImage.alt || galeri.title}
-                                src={selectedImage.imageUrl}
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + selectedImage.imageUrl}
                                 unoptimized={true} 
                                 width={800}
                                 height={600}
