@@ -27,19 +27,32 @@ const Header = () => {
 
 const Visi = () => {
   return (
-    <div className="flex flex-row-reverse">
-      <div className="relative w-1/2 aspect-square flex-shrink-0">
-        <Image
-          src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Visi.webp"
-          alt="hero"
-          className="object-cover brightness-75"
-          priority
-          fill />
-      </div>
-      <div className="m-2 bg-white px-2 lg:px-9 flex gap-1 lg:gap-16 flex-col justify-center  py-2 lg:py-10">
-        <h2 className="text-2xl sm:text-4xl md:text-5xl my-4 lg:text-6xl font-bold font-heading text-blue-primary text-center">Visi</h2>
-        <p className="text-xs md:text-1xl lg:text-2xl  lg:text-center text-justify ">Meningkatkan kualitas hidup umat beriman dalam keluarga dan masyarakat dengan karya nyata, inovatif, dan dalam terang Roh Kudus sehingga kehadiran Allah dapat lebih dirasakan berdasarkan semangat Gembala Baik dan murah hati.</p>
-        
+    <div className="w-full bg-white py-5 px-10 flex justify-center">
+      <div className="flex w-full rounded-2xl overflow-hidden shadow-xl bg-[#056CB6] min-h-[300px]">
+        <div className="p-5 flex-shrink-0">
+          <div className="relative w-[700px] h-[400px] rounded-xl overflow-hidden">
+            {/* kegedean gk gambarnya? wkwkwk */}
+            <Image
+              src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Visi2.webp"
+              alt="Foto Visi"
+              className="object-cover"
+              fill
+              priority
+            />
+          </div>
+        </div>
+
+        <div className="flex-1 flex flex-col justify-center gap-5 px-8 py-10">
+          <h2 className="text-white text-3xl font-bold font-heading underline underline-offset-4 decoration-2">
+            Visi
+          </h2>
+          <p className="text-white/90 text-sm md:text-base leading-relaxed font-light">
+            Meningkatkan kualitas hidup umat beriman dalam keluarga dan masyarakat
+            dengan karya nyata, inovatif, dan dalam terang Roh Kudus sehingga
+            kehadiran Allah dapat lebih dirasakan berdasarkan semangat Gembala Baik
+            dan murah hati.
+          </p>
+        </div>
       </div>
     </div>
   )
@@ -175,7 +188,7 @@ const Misi = () => {
       <div className="relative w-full min-h-screen lg:h-auto overflow-hidden rounded-xl">
         <div className="absolute inset-0">
           <Image
-            src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Misi.webp"
+            src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Misi2.webp"
             alt="Misi Background"
             className="object-cover"
             fill
