@@ -16,7 +16,7 @@ const Header = () => {
       <div className="bg-blue-950/50 w-full h-[35vh]  md:h-[40vh] lg:h-[50vh] max-h-[720px] absolute flex justify-center">
         <div className="w-[90%] max-w-[1300px] text-white h-full flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4 mt-20  ">
-            <h1 className="font-heading text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-center min-w-max "><b>Visi</b> dan Misi</h1>
+            <h1 className="font-headjuing text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-center min-w-max "><b>Visi</b> dan Misi</h1>
             <div className="w-8 h-1.5 bg-white" />
           </div>
         </div>
@@ -27,10 +27,11 @@ const Header = () => {
 
 const Visi = () => {
   return (
-    <div className="w-full bg-white py-5 px-10 flex justify-center">
-      <div className="flex w-full rounded-2xl overflow-hidden shadow-xl bg-[#056CB6] min-h-[300px]">
-        <div className="p-5 flex-shrink-0">
-          <div className="relative w-[700px] h-[400px] rounded-xl overflow-hidden">
+    <div className="w-full bg-white px-4 md:px-10 pt-10 flex justify-center">
+      {/* <div className="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden shadow-xl bg-[#056CB6] min-h-[300px]"> */}
+      <div className="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden shadow-xl bg-[#324d90] min-h-[300px]">
+        <div className="p-4 md:p-5 flex-shrink-0 w-full lg:w-1/2 xl:w-[55%]">
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-xl overflow-hidden">
             {/* kegedean gk gambarnya? wkwkwk */}
             <Image
               src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Visi2.webp"
@@ -42,11 +43,13 @@ const Visi = () => {
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col justify-center gap-5 px-8 py-10">
-          <h2 className="text-white text-3xl font-bold font-heading underline underline-offset-4 decoration-2">
-            Visi
-          </h2>
-          <p className="text-white/90 text-sm md:text-base leading-relaxed font-light">
+        <div className="flex-1 flex flex-col justify-center items-center lg:items-start gap-4 md:gap-9 px-6 pb-8 pt-2 md:px-8 lg:py-10 text-center lg:text-left">
+          <div className="flex flex-col gap-2 ">
+            <h1 className="text-white text-3xl md:text-4xl font-bold">Visi</h1>
+            <div className="w-16 h-1 bg-white" />
+          </div>
+          
+          <p className="text-white text-sm md:text-base leading-relaxed z-10">
             Meningkatkan kualitas hidup umat beriman dalam keluarga dan masyarakat
             dengan karya nyata, inovatif, dan dalam terang Roh Kudus sehingga
             kehadiran Allah dapat lebih dirasakan berdasarkan semangat Gembala Baik
@@ -199,7 +202,7 @@ const Misi = () => {
 
         <div className="relative z-10 w-full h-full flex flex-col items-center py-12 px-6 lg:px-12">
           <div className="flex flex-col items-center gap-2 mb-12">
-            <h1 className="text-white text-5xl font-heading font-bold">Misi</h1>
+            <h1 className="text-white text-3xl md:text-4xl font-bold">Misi</h1>
             <div className="w-16 h-1 bg-white" />
           </div>
 
@@ -207,15 +210,15 @@ const Misi = () => {
             {misiData.map((misi) => (
               <div
                 key={misi.id}
-                className="relative bg-slate-900/70 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center text-center border border-white/10 min-h-[280px] justify-start overflow-hidden group"
+                className="relative bg-slate-900/70 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center text-center border border-white/10 min-h-[280px] justify-center md:justify-start overflow-hidden group"
               >
-                <span className="absolute -bottom-0 left-5 text-[260px] md:text-[200] lg:text-[150] font-bold text-white/5 select-none leading-none">
+                <span className="hidden md:block absolute -bottom-0 left-5 text-[260px] md:text-[200] lg:text-[150] font-bold text-white/5 select-none leading-none">
                   {misi.id}
                 </span>
                 
-                <div className="mb-6 z-10">{misi.svg}</div>
+                <div className="mb-6 z-10 hidden md:block">{misi.svg}</div>
 
-                <p className="text-white text-sm md:text-base leading-relaxed z-10">
+                <p className="text-white text-sm md:text-base leading-relaxed z-10 ">
                   {misi.text}
                 </p>
               </div>
