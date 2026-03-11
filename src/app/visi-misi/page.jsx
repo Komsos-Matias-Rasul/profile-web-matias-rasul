@@ -187,7 +187,7 @@ const Misi = () => {
   ];
 
   return (
-    <div className="w-full bg-white p-10">
+    <div className="w-full bg-white px-4 md:px-10 py-10">
       <div className="relative w-full min-h-screen lg:h-auto overflow-hidden rounded-xl">
         <div className="absolute inset-0">
           <Image
@@ -206,11 +206,11 @@ const Misi = () => {
             <div className="w-16 h-1 bg-white" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] w-full p-0">
             {misiData.map((misi) => (
               <div
                 key={misi.id}
-                className="relative bg-slate-900/70 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center text-center border border-white/10 min-h-[280px] justify-center md:justify-start overflow-hidden group"
+                className="relative bg-slate-900/70 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center text-center border border-white/10 min-h-[100px] md:min-h-[280px] justify-center md:justify-start overflow-hidden group"
               >
                 <span className="hidden md:block absolute -bottom-0 left-5 text-[260px] md:text-[200] lg:text-[150] font-bold text-white/5 select-none leading-none">
                   {misi.id}
