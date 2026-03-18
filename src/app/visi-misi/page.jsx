@@ -34,7 +34,7 @@ const Visi = () => {
           <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] rounded-xl overflow-hidden">
             {/* kegedean gk gambarnya? wkwkwk */}
             <Image
-              src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Visi2.webp"
+              src= {process.env.NEXT_PUBLIC_GCLOUD_PREFIX+"/visi-misi/Visi2.webp"}
               alt="Foto Visi"
               className="object-cover"
               fill
@@ -191,7 +191,7 @@ const Misi = () => {
       <div className="relative w-full min-h-screen lg:h-auto overflow-hidden rounded-xl">
         <div className="absolute inset-0">
           <Image
-            src="https://storage.googleapis.com/parokikosambibaru-bucket/visi-misi/Misi2.webp"
+            src= {process.env.NEXT_PUBLIC_GCLOUD_PREFIX+"/visi-misi/misi3.webp"}
             alt="Misi Background"
             className="object-cover"
             fill
