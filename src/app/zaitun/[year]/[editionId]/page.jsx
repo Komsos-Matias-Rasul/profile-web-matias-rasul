@@ -11,7 +11,7 @@ import { AdCarouselConstructor } from "@/helpers/ads";
 import LogoSection from "@/components/RunningLogo";
 
 const Sponsors = () => {
-  const AD_DIR = "/ads/2025/natal/"
+  const AD_DIR = "/ads/2026/paskah/"
 
   return (
     <>
@@ -20,30 +20,37 @@ const Sponsors = () => {
       {/* Iklan D */}
       <div className="grid grid-cols-3 gap-8 mb-8 mx-auto justify-center w-4/5">
         {
-          [1,3,7,9,10,18,19,12,13].map((adNumber) => {
-            // E: 2,   16,4,5,8,6,   17,11,   14,15
-            const image = `${AD_DIR}D${adNumber}.webp`
+          [1,2,3,4,5].map((adNumber) => {
+            const image = `${AD_DIR}D${adNumber}.png`
           return (
             <PopUpAdModal key={adNumber} img={process.env.GCLOUD_PREFIX + image} width={80}/>
           )})
         }
       </div>
-      <h2 className="text-center font-heading text-xmas-secondary mb-8">Terima kasih untuk dukungan:</h2>
-      <LogoSection />
+      {/* <h2 className="text-center font-heading text-xmas-secondary mb-8">Terima kasih untuk dukungan:</h2> */}
+      {/* <LogoSection /> */}
     </>
   )
 }
 
 const adsA = [
-  "/ads/2025/natal/A1.webp"
+  // "/ads/2025/natal/A1.webp"
 ]
 
 const adsC = [
-  "/ads/2025/natal/C1.webp",
-  "/ads/2025/natal/C2.webp",
-  "/ads/2025/natal/C3.webp",
-  "/ads/2025/natal/C4.webp",
-  "/ads/2025/natal/C5.webp"
+  "/ads/2026/paskah/C1.png",
+  "/ads/2026/paskah/C2.png",
+  "/ads/2026/paskah/C3.png",
+  "/ads/2026/paskah/C4.png",
+  "/ads/2026/paskah/C5.png",
+  "/ads/2026/paskah/C6.png",
+  "/ads/2026/paskah/C7.png",
+  "/ads/2026/paskah/C8.png",
+  "/ads/2026/paskah/C9.png",
+  "/ads/2026/paskah/C10.png",
+  "/ads/2026/paskah/C11.png",
+  "/ads/2026/paskah/C12.png",
+  "/ads/2026/paskah/C13.png",
 ]
 
 const ZaitunPage = async ({params}) => {

@@ -55,9 +55,9 @@ const Contents = ({articleContent}) => {
   )
 }
 
-const adsF = [
-  "/ads/2025/natal/F1.webp"
-]
+// const adsF = [
+//   "/ads/2025/natal/F1.webp"
+// ]
 
 const ArticlePage = async ({params}) => {
   const param = await params
@@ -76,7 +76,7 @@ const ArticlePage = async ({params}) => {
     }
     if (adsJson?.below) {
       const sliderAmount = adsJson?.below.length >= 3 ? 3 : adsJson?.below.length
-      adFCarousels = AdCarouselConstructor(adsF, sliderAmount)
+      adFCarousels = AdCarouselConstructor(adsJson.below, sliderAmount)
     }
   }
   catch (err) {
