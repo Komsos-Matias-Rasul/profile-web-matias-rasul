@@ -1,5 +1,10 @@
 import Image from "next/image"
 
+export const metadata = {
+  title: "Visi dan Misi",
+  description: "Visi dan Misi Gereja Santo Matias Rasul Kosambi Baru",
+};
+
 const Header = () => {
   return (
     <div className="w-full flex justify-center">

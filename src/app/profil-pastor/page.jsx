@@ -1,5 +1,10 @@
 import Image from "next/image"
 
+export const metadata = {
+  title: "Pastor Paroki",
+  description: "Para imam Gereja Santo Matias Rasul Kosambi Baru",
+};
+
 const CardItem = ({ img, nama, posisi, masaJabat }) => {
   return (
     <div className="bg-white w-full min-h-[30rem] shadow-lg rounded-lg overflow-hidden">

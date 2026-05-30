@@ -10,6 +10,35 @@ import { PopUpAdModal } from "@/components/PopUpAdModal";
 import { AdCarouselConstructor } from "@/helpers/ads";
 import LogoSection from "@/components/RunningLogo";
 
+export const generateMetadata = async ({ params }) => {
+  const { editionId } = await params
+  const { data, error } = await GetZaitunData(editionId)
+  if (error) return
+
+  return {
+    title: {absolute: "Zaitun Majalah Digital | " + data.title},
+    alternates: {
+      canonical: `/${data.year}/${data.id}`,
+    },
+    openGraph: {
+      type: 'website',
+      locale: 'id_ID',
+      url: `/${data.year}/${data.id}`,
+      siteName: 'Zaitun Majalah Digital',
+      title: "Zaitun Majalah Digital | " + data.title,
+      description: 'Majalah digital Paroki Kosambi Baru. Zaitun menjadi wadah pewartaan gereja melalui artikel rohani dan non rohani yang terbit setiap natal dan paskah.',
+      images: [
+        {
+          url: process.env.GCLOUD_PREFIX + data.coverImg,
+          width: 1080,
+          height: 1350,
+          alt: data.title,
+        },
+      ],
+    },
+  }
+}
+
 const Sponsors = () => {
   const AD_DIR = "/ads/2026/paskah/"
 
@@ -53,8 +82,7 @@ const adsC = [
   "/ads/2026/paskah/C13.png",
 ]
 
-const ZaitunPage = async ({params}) => {
-  const { editionId } = await params
+const GetZaitunData = async(editionId) => {
   let editionData
   try {
     const res = await fetch(`${process.env.BACKEND_URL}/api/editions/${editionId}`)
@@ -63,11 +91,20 @@ const ZaitunPage = async ({params}) => {
     }
     const jsonData = await res.json()
     editionData = jsonData.data
+    return { data: editionData, error: null }
   } catch (err) {
     console.error(err)
-    // change dis to error page pls >:(
-    return <div>Error</div>
+    return { data: null, error: err }
   }
+}
+
+const ZaitunPage = async ({params}) => {
+  const { editionId } = await params
+  const { data, error } = await GetZaitunData(editionId)
+
+  // change dis to error page pls >:(
+  if (error) return <div>Error</div>
+
   const adACarousels = AdCarouselConstructor(adsA, 3)
   const adCCarousels = AdCarouselConstructor(adsC, 2)
 
@@ -83,7 +120,7 @@ const ZaitunPage = async ({params}) => {
           </div>
 
           <div className="relative w-full h-full hidden md:block bg-xmas-tertiary/25">
-            <Image className="object-cover" fill priority alt="" src={process.env.GCLOUD_PREFIX + editionData.coverImg} />
+            <Image className="object-cover" fill priority alt="" src={process.env.GCLOUD_PREFIX + data.coverImg} />
           </div>
 
           <div className="hidden md:flex px-2 py-6 h-full border-r border-xmas-tertiary/20 bg-xmas-neutral flex-col justify-between">
@@ -111,12 +148,12 @@ const ZaitunPage = async ({params}) => {
           <div className="relative w-full min-h-screen md:min-h-min block md:hidden">
             <div className="absolute size-full">
               <div className="relative w-full h-screen">
-                <Image src={process.env.GCLOUD_PREFIX + editionData.coverImg} fill priority className="object-cover brightness-50" alt="cover" />
+                <Image src={process.env.GCLOUD_PREFIX + data.coverImg} fill priority className="object-cover brightness-50" alt="cover" />
               </div>
             </div>
             <div className="absolute flex items-end p-4 h-full">
               <h1 className="text-6xl lg:text-8xl font-ibara font-bold leading-tight text-xmas-neutral">
-                {editionData.title}
+                {data.title}
               </h1>
             </div>
           </div>
@@ -131,10 +168,10 @@ const ZaitunPage = async ({params}) => {
                 </div>
               </div>
               <h1 className="hidden md:block text-6xl lg:text-8xl font-ibara font-bold leading-tight text-xmas-primary">
-                {editionData.title}
+                {data.title}
               </h1>
               <div className="my-8">
-                <ContentSection categories={editionData.categories} editionId={editionData.id}/>
+                <ContentSection categories={data.categories} editionId={data.id}/>
               </div>
               <div className="flex flex-row justify-center w-[85%] m-auto mb-20">
                 {

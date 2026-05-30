@@ -7,6 +7,42 @@ import { MdChevronRight } from "react-icons/md";
 import { AdCarousell } from "@/components/AdCarousell";
 import { AdCarouselConstructor } from "@/helpers/ads";
 
+export const generateMetadata = async ({ params }) => {
+  const param = await params
+  const {year, editionId, slug} = param
+
+  const {data, error} = await GetArticleData(param)
+  if (error) return
+
+  const { content } = data
+
+  return {
+    title: {absolute: content.title},
+    alternates: {
+      canonical: `/${year}/${editionId}/${slug}`,
+    },
+    authors: [{name: content.writerName}],
+    description: content.thumbText,
+    openGraph: {
+      type: 'article',
+      locale: 'id_ID',
+      url: `/${year}/${editionId}/${slug}`,
+      title: content.title,
+      description: content.thumbText,
+      publishedTime: content.publishedAt,
+      authors: [content.writerName],
+      images: [
+        {
+          url: process.env.GCLOUD_PREFIX + content.thumbImg,
+          width: 1080,
+          height: 1350,
+          alt: content.title,
+        },
+      ],
+    },
+  }
+}
+
 const Contents = ({articleContent}) => {
   const jsonData = JSON.parse(articleContent)
   return (
@@ -59,8 +95,7 @@ const Contents = ({articleContent}) => {
 //   "/ads/2025/natal/F1.webp"
 // ]
 
-const ArticlePage = async ({params}) => {
-  const param = await params
+const GetArticleData = async (param) => {
   const {year, editionId, slug} = param
   let content, adCarousels, adFCarousels
   try {
@@ -78,13 +113,24 @@ const ArticlePage = async ({params}) => {
       const sliderAmount = adsJson?.below.length >= 3 ? 3 : adsJson?.below.length
       adFCarousels = AdCarouselConstructor(adsJson.below, sliderAmount)
     }
+    return {
+      data: {content, adCarousels, adFCarousels}, error: null
+    }
   }
   catch (err) {
     console.error(err)
-    return (
-      <div>Error</div>
-    )
+    return { data: null, error: err }
   }
+}
+
+const ArticlePage = async ({params}) => {
+  const param = await params
+  
+  const {data, error} = await GetArticleData(param)
+  if (error) return <div>Error</div>
+
+  const { content, adCarousels, adFCarousels } = data
+
   return (
     <div className="min-h-screen">
       <div className="flex">
