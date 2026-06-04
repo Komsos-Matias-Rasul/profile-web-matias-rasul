@@ -99,7 +99,9 @@ const JadwalMisa = () => {
             </div>
           </div>
  
-          {/* Misa Jumat Pertama */}
+ 
+
+
           <div className="bg-[#e3ebf6] rounded-2xl border border-blue-100 p-8 flex flex-col items-center gap-5 shadow-md">
             <div className="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center">
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +139,9 @@ const JadwalMisa = () => {
  
         </div>
  
-        {/* Info & Map */}
+ 
+
+ 
         <div className="bg-white rounded-2xl border border-blue-100 shadow-lg overflow-hidden">
           <div className="bg-blue-primary h-1.5 w-full" />
           <div className="flex flex-col lg:flex-row p-6 md:p-8 gap-6 md:gap-8">
