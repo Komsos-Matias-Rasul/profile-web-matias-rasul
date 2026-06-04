@@ -32,13 +32,23 @@ const Header = () => {
 
 const JadwalMisa = () => {
   return (
-    <div className="w-full flex justify-center py-16">
-      <div className="w-[80%] max-w-[1300px]">
+    <div className="w-full flex justify-center py-10 bg-gray-50">
+      <div className="w-[90%] max-w-[1300px]">
+ 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+ 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-6 mb-14 " >
 
-          <div className="flex flex-col gap-3 lg:gap-8 px-4">
-            <div className="flex flex-col items-center justify-center gap-2">
+
+
+
+
+
+
+
+
+          <div className="bg-[#e3ebf6]  rounded-2xl border border-blue-100 p-8 flex flex-col items-center gap-5 shadow-md">
+            <div className="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center">
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.467285" y="0.529846" width="50.7935" height="50.7935" rx="7" fill="#0071B7" />
                 <rect x="14.5552" y="12.3283" width="17.7824" height="27.1965" rx="3.07721" fill="white" />
@@ -46,22 +56,26 @@ const JadwalMisa = () => {
                 <path d="M23.5264 19.7775L23.5264 29.4567" stroke="#0071B7" strokeWidth="2" strokeLinecap="round" />
                 <path d="M26.3719 22.3581H20.6805" stroke="#0071B7" strokeWidth="2" strokeLinecap="round" />
               </svg>
-              <h2 className="font-heading text-2xl text-blue-secondary text-center">Misa Harian</h2>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-lg ">Hari Selasa, Kamis, dan Sabtu</h3>
-              <ul className="list-disc list-inside list-none mb-3">
-                <li>Pukul 06.00 (pagi)</li>
-              </ul>
-              <h3 className="font-semibold text-lg">Hari Senin, Rabu, dan Jumat</h3>
-              <ul className="list-disc list-inside list-none">
-                <li>Pukul 19.00</li>
-              </ul>
+            <h2 className="font-heading text-2xl font-semibold text-[#0071B7] text-center">Misa Harian</h2>
+            <div className="w-full flex flex-col gap-3 text-base text-gray-700">
+              <div className="flex items-baseline justify-between border-b border-[#0071B7] pb-3">
+                <span className="text-black font-medium">Selasa, Kamis, Sabtu</span>
+                <span className="font-semibold text-[#0071B7] ml-4 whitespace-nowrap">06.00 (pagi)</span>
+              </div>
+              <div className="flex items-baseline justify-between pt-1">
+                <span className="text-black font-medium">Senin, Rabu, Jumat</span>
+                <span className="font-semibold text-[#0071B7] ml-4 whitespace-nowrap">19.00</span>
+              </div>
             </div>
           </div>
+ 
 
-          <div className="flex flex-col gap-3 lg:gap-8 px-4 md:border-l md:border-r border-neutral-300">
-            <div className="flex flex-col items-center justify-center gap-2">
+
+
+
+          <div className="bg-[#e3ebf6] rounded-2xl p-8 flex flex-col items-center gap-5 shadow-md">
+            <div className="w-16 h-16 rounded-xl flex items-center justify-center">
               <svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="0.529846" width="50.7935" height="50.7935" rx="7" fill="#0071B7" />
                 <path d="M18.6392 24.2088C18.6392 23.6565 19.0869 23.2088 19.6392 23.2088H31.07C31.6223 23.2088 32.07 23.6565 32.07 24.2088V29.2322C32.07 31.9936 29.8314 34.2322 27.07 34.2322H23.6392C20.8777 34.2322 18.6392 31.9936 18.6392 29.2322V24.2088Z" fill="white" />
@@ -71,24 +85,23 @@ const JadwalMisa = () => {
                 <path d="M25.3967 13.0515V16.9135" stroke="#0071B7" strokeLinecap="round" />
                 <path d="M26.6232 14.2691H24.1704" stroke="#0071B7" strokeLinecap="round" />
               </svg>
-              <h2 className="font-heading text-2xl text-blue-secondary text-center">Misa Mingguan</h2>
             </div>
-            <div className="text-center ">
-              <h3 className="font-semibold text-lg">Hari Sabtu</h3>
-              <ul className="list-disc list-inside list-none mb-3">
-                <li>Pukul 17.00</li>
-              </ul>
-              <h3 className="font-semibold text-lg">Hari Minggu</h3>
-              <ul className="list-disc list-inside list-none">
-                <li>Pukul 06.30</li>
-                <li>Pukul 09.00</li>
-                <li>Pukul 17.00</li>
-              </ul>
+            <h2 className="font-heading text-2xl font-semibold text-[#0071B7] text-center">Misa Mingguan</h2>
+            <div className="w-full flex flex-col gap-3 text-base">
+              <div className="flex items-baseline justify-between border-b border-[#0071B7] pb-3">
+                <span className="text-black font-medium">Sabtu</span>
+                <span className="font-semibold text-[#0071B7] ml-4">17.00</span>
+              </div>
+              <div className="flex items-baseline justify-between pt-1">
+                <span className="text-black font-medium">Minggu</span>
+                <span className="font-semibold text-[#0071B7] ml-4">06.30, 09.00, 17.00</span>
+              </div>
             </div>
           </div>
-
-          <div className="flex flex-col gap-3 lg:gap-8 px-4">
-            <div className="flex flex-col items-center justify-center gap-2">
+ 
+          {/* Misa Jumat Pertama */}
+          <div className="bg-[#e3ebf6] rounded-2xl border border-blue-100 p-8 flex flex-col items-center gap-5 shadow-md">
+            <div className="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center">
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.892578" y="0.529846" width="50.7935" height="50.7935" rx="7" fill="#0071B7" />
                 <circle cx="26.0035" cy="21.3826" r="4.49481" stroke="white" strokeWidth="2" />
@@ -112,42 +125,52 @@ const JadwalMisa = () => {
                 <rect x="28.2607" y="31.5417" width="8.19702" height="4.51434" rx="2.25717" transform="rotate(90 28.2607 31.5417)" fill="white" />
                 <rect x="15.5703" y="38.7937" width="20.8665" height="2.97894" rx="1.48947" fill="white" />
               </svg>
-              <h2 className="font-heading text-2xl text-blue-secondary text-center ">Misa Jumat Pertama & Adorasi</h2>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-lg">Setiap Hari Jumat di minggu pertama</h3>
-              <ul className="list-disc list-inside list-none">
-                <li>Pukul 19.00</li>
-              </ul>
+            <h2 className="font-heading text-2xl font-semibold text-[#0071B7] text-center">Misa Jumat Pertama &amp; Adorasi</h2>
+            <div className="w-full flex flex-col gap-3 text-base text-gray-700">
+              <div className="flex items-baseline justify-between">
+                <span className="text-black font-medium">Jumat pertama tiap bulan</span>
+                <span className="font-semibold text-[#0071B7] ml-4 whitespace-nowrap">19.00</span>
+              </div>
             </div>
           </div>
-
+ 
         </div>
-
-        <div className="bg-white p-8 pt-10 rounded-lg drop-shadow-md shadow-lg overflow-hidden">
-          <div className="bg-blue-primary h-2 w-full fixed top-0 left-0" />
-          <div className="flex flex-col lg:flex-row">
+ 
+        {/* Info & Map */}
+        <div className="bg-white rounded-2xl border border-blue-100 shadow-lg overflow-hidden">
+          <div className="bg-blue-primary h-1.5 w-full" />
+          <div className="flex flex-col lg:flex-row p-6 md:p-8 gap-6 md:gap-8">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.300278499702!2d106.71375096532124!3d-6.173913110648456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f82f762d21e1%3A0x6fa55f3e9b6796e9!2sGereja%20Katolik%20Paroki%20Santo%20Matias%20Rasul%2C%20Kosambi%20Baru!5e0!3m2!1sid!2sid!4v1728317186635!5m2!1sid!2sid"
-              className="h-64 w-full md:h-96 md:aspect-[5/4] rounded-xl drop-shadow-lg"
+              className="h-64 w-full md:h-80 lg:w-[420px] lg:flex-shrink-0 rounded-xl"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div className="px-0 lg:px-6 flex flex-col gap-4 mt-4 md:mt-0 md:pl-6">
-              <h3 className="font-heading text-xl text-blue-secondary mt-3 lg:mt-0 ">Ketentuan Mengikuti Perayaan Ekaristi</h3>
-              <ul className="list-disc ml-4">
-                <li>Umat tidak perlu melakukan pendaftaran untuk mengikuti Misa Harian, Misa Jumat Pertama, dan Misa Mingguan.</li>
-                <li>Menjaga protokol kesehatan yang berlaku.</li>
-                <li>Penggunaan masker tidak diwajibkan kecuali bagi umat yang sedang dalam kondisi sakit demi keselamatan bersama.</li>
-                <li>Mengenakan pakaian rapi dan sopan.</li>
-                <li>Datang tepat waktu.</li>
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="flex flex-col gap-4 justify-center">
+              <h3 className="font-heading text-xl md:text-2xl text-blue-900 font-semibold">Ketentuan Mengikuti Perayaan Ekaristi</h3>
+              <ul className="flex flex-col gap-3 md:gap-4">
+                {[
+                  "Umat tidak perlu melakukan pendaftaran untuk mengikuti Misa Harian, Misa Jumat Pertama, dan Misa Mingguan.",
+                  "Menjaga protokol kesehatan yang berlaku.",
+                  "Penggunaan masker tidak diwajibkan kecuali bagi umat yang sedang dalam kondisi sakit demi keselamatan bersama.",
+                  "Mengenakan pakaian rapi dan sopan.",
+                  "Datang tepat waktu.",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm md:text-base text-gray-700">
+                    <span className="mt-0.5 w-5 h-5 flex-shrink-0 rounded-full bg-blue-100 flex items-center justify-center">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 5l2 2 4-4" stroke="#0071B7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    {item}
+                  </li>
+                ))}
               </ul>
-              <p className="bg-rose-500 w-fit px-4 py-2 rounded-lg text-white animate-pulse mb-4">Misa daring sudah ditiadakan</p>
             </div>
           </div>
         </div>
-
-
+ 
       </div>
     </div>
   )
