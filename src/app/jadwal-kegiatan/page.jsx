@@ -77,29 +77,43 @@ const JadwalKegiatanRutin = () => {
                         </div>
                     </div>
 
-                    {/* gas dilanjutkan bro yos.. */}
-
-                    <div className="flex flex-col gap-0 p-4 md:border-r md:border-t border-neutral-300">
-                        <div className="flex flex-col items-center justify-center gap-2">
-                            <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">BINA IMAN ANAK</h2>
+                    <div className="flex flex-col items-center text-center gap-4 sm:flex-row sm:items-center sm:text-left sm:gap-0 p-6 bg-[#E3EBF6] rounded-2xl shadow-xl">
+                        <div className="order-2 sm:order-1 flex flex-col gap-2">
+                            <h2 className="font-heading font-bold text-3xl text-blue-secondary">Bina Iman Anak</h2>
+                            <div className="gap-0 py-0">
+                                <h2 className=" text-lg">Setiap Hari <b>Minggu</b></h2>
+                                <h2 className="font-bold text-lg">Pukul 07.30 - 08.30</h2>
+                            </div>
+                            <h2 className=" italic">Ruang Mediatrix 1 & 3 & Aula Wisma Santo Yohanes Paulus II</h2>
                         </div>
-                        <div className="text-center ">
-                            <h3 className="font-semibold text-lg">Minggu, pukul 07.30 - 08.30</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>di ruang Mediatrix 1 & 3, dan Yohanes Paulus II <br /> (Minggu pertama setiap bulan, BIA libur)</li>
-                            </ul>
+                        <div className="order-1 sm:order-2 flex items-center justify-center sm:justify-end sm:ml-auto">
+                            <Image
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/jadwal/Bina_Iman_Anak.webp"}
+                                alt="BIA icon"
+                                className="sm:mr-10"
+                                width={60}
+                                height={60}
+                            />
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-0 p-4 md:border-t md:border-l">
-                        <div className="flex flex-col items-center justify-center">
-                            <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">BINA IMAN REMAJA</h2>
+                    <div className="flex flex-col items-center text-center gap-4 sm:flex-row sm:items-center sm:text-left sm:gap-0 p-6 bg-[#E3EBF6] rounded-2xl shadow-xl">
+                        <div className="order-2 sm:order-1 flex flex-col gap-2">
+                            <h2 className="font-heading font-bold text-3xl text-blue-secondary">Bina Iman Remaja</h2>
+                            <div className="gap-0 py-0">
+                                <h2 className=" text-lg">Setiap Hari <b>Minggu</b></h2>
+                                <h2 className="font-bold text-lg">Pukul 10.00 - 12.00</h2>
+                            </div>
+                            <h2 className=" italic">Ruang Mediatrix 1 & 3</h2>
                         </div>
-                        <div className="text-center ">
-                            <h3 className="font-semibold text-lg">Minggu, pukul 10.30 - 12.00</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>di Ruang Mediatrix 1-3</li>
-                            </ul>
+                        <div className="order-1 sm:order-2 flex items-center justify-center sm:justify-end sm:ml-auto">
+                            <Image
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/jadwal/Bina_iman_Remaja.webp"}
+                                alt="BIR icon"
+                                className="sm:mr-10"
+                                width={60}
+                                height={60}
+                            />
                         </div>
                     </div>
 
