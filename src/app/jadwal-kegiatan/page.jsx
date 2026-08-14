@@ -108,7 +108,7 @@ const JadwalKegiatanRutin = () => {
                         </div>
                         <div className="order-1 sm:order-2 flex items-center justify-center sm:justify-end sm:ml-auto">
                             <Image
-                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/jadwal/Bina_iman_Remaja.webp"}
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/jadwal/Bina_Iman_Remaja.webp"}
                                 alt="BIR icon"
                                 className="sm:mr-10"
                                 width={60}
