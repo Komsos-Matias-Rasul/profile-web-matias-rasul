@@ -3,7 +3,7 @@ import Image from "next/image"
 export const metadata = {
     title: "Pelayanan",
     description: "Jadwal pelayanan Gereja Santo Matias Rasul Kosambi Baru",
-};  
+};
 
 const Header = () => {
     return (
@@ -32,60 +32,82 @@ const Header = () => {
 
 const JadwalLayanan = () => {
     return (
-        <div className="w-full flex justify-center py-7">
-            <div className="w-[80%] max-w-[1300px] p-4">
+        <div className="w-full flex justify-center py-10 bg-gray-50">
+            <div className="w-[90%] max-w-[1300px]">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
 
 
-                <div className="flex flex-col gap-0 ">
-                    <div className="flex flex-col items-center justify-center gap-2">
-                        <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">SEKRETARIAT</h2>
+
+                    <div className="bg-[#e3ebf6] rounded-2xl border border-blue-100 p-5 md:p-8 flex flex-col items-center gap-4 md:gap-5 shadow-md w-full max-w-md md:max-w-lg mx-auto">
+
+                        <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-50 rounded-xl flex items-center justify-center">
+                            <Image
+                                src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + "/jadwal/Sekretariat.webp"}
+                                alt="pdkk icon"
+                                width={60}
+                                height={60}
+                                className="w-10 h-10 md:w-[60px] md:h-[60px]"
+                            />
+                        </div>
+
+                        <h2 className="font-heading text-xl md:text-2xl font-semibold text-[#0071B7] text-center">Sekretariat</h2>
+
+                        <div className="w-full flex flex-col gap-3 text-sm md:text-base text-gray-700">
+
+                            <div className="flex items-center justify-between border-b border-[#0071B7] pb-3 gap-2">
+                                <span className="text-black font-medium text-left">Senin & Libur Hari Naisonal</span>
+                                <span className="font-semibold text-[#0071B7] whitespace-nowrap">Libur</span>
+                            </div>
+
+                            <div className="flex items-center justify-between border-b border-[#0071B7] pb-3 gap-2">
+                                <span className="text-black font-medium text-left">Selasa - Jumat</span>
+                                <span className="font-semibold text-[#0071B7] whitespace-nowrap">08.00 - 19.00</span>
+                            </div>
+
+                            <div className="flex items-center justify-between border-b border-[#0071B7] pb-3 gap-2">
+                                <span className="text-black font-medium text-left">Sabtu</span>
+                                <div className="text-right">
+                                    <div className="font-semibold text-[#0071B7] whitespace-nowrap">08.00 - 12.00</div>
+                                    <div className="font-semibold text-[#0071B7] whitespace-nowrap">16.00 - 19.00</div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-between pt-1 gap-2">
+                                <span className="text-black font-medium text-left">Minggu</span>
+                                <div className="text-right">
+                                    <div className="font-semibold text-[#0071B7] whitespace-nowrap">07.00 - 11.00</div>
+                                    <div className="font-semibold text-[#0071B7] whitespace-nowrap">16.00 - 19.00</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 md:gap-0 mt-10">
-                        <div className="text-center ">
-                            <h3 className="font-bold text-lg">Senin dan Libur Hari Nasional</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>LIBUR</li>
-                            </ul>
+
+
+
+
+
+
+                    <div>
+
+                        <div className="bg-[#e3ebf6] rounded-2xl p-8 flex flex-col items-center gap-5 shadow-md">
+
+
+
                         </div>
-                        <div className="text-center ">
-                            <h3 className="font-bold text-lg">Selasa - Jumat</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>08.00 – 19.00</li>
-                            </ul>
+                        <div className="bg-[#e3ebf6] rounded-2xl p-8 flex flex-col items-center gap-5 shadow-md">
+
+
+
                         </div>
-                        <div className="text-center ">
-                            <h3 className="font-bold text-lg">Sabtu</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>08.00 – 12.00</li>
-                                <li>16.00 – 19.00</li>
-                            </ul>
-                        </div>
-                        <div className="text-center ">
-                            <h3 className="font-bold text-lg">Minggu</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>07.00 – 11.00</li>
-                                <li>16.00 – 19.00</li>
-                            </ul>
-                        </div>
+
                     </div>
+
+
+
                 </div>
 
-                <div className="border-t border-gray-300 my-4"></div>
-                
-                <div className="mt-10">
-                    <div className="flex flex-col items-center justify-center gap-2">
-                        <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">RUANG ADORASI & GUA MARIA</h2>
-                    </div>
-                    <div className="mt-10">
-                        <div className="text-center ">
-                            <h3 className="font-bold text-lg">Senin – Minggu</h3>
-                            <ul className="list-disc list-inside list-none mb-3">
-                                <li>06.00 - 21.00</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
+
             </div>
         </div>
     )
