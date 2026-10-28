@@ -72,9 +72,15 @@ const JadwalLayanan = () => {
 
                 <div className="border-t border-gray-300 my-4"></div>
                 
-                <div className="mt-10">
+                <div className="flex flex-col gap-0">
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">RUANG ADORASI & GUA MARIA</h2>
+                        <Image
+                            src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + '/jadwal/Adorasi.webp'}
+                            alt="Ruang Adorasi"
+                            width={48}
+                            height={48}
+                            className="w-12 h-12 object-contain" />
+                        <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">RUANG ADORASI</h2>
                     </div>
                     <div className="mt-10">
                         <div className="text-center ">
@@ -83,7 +89,28 @@ const JadwalLayanan = () => {
                                 <li>06.00 - 21.00</li>
                             </ul>
                         </div>
-                        
+                    </div>
+                </div>
+
+                <div className="border-t border-gray-300 my-4"></div>
+
+                <div className="flex flex-col gap-0">
+                    <div className="flex flex-col items-center justify-center gap-2">
+                        <Image
+                            src={process.env.NEXT_PUBLIC_GCLOUD_PREFIX + '/jadwal/Gua_Maria.webp'}
+                            alt="Gua Maria"
+                            width={48}
+                            height={48}
+                            className="w-12 h-12 object-contain" />
+                        <h2 className="font-heading font-bold text-2xl text-blue-secondary text-center">GUA MARIA</h2>
+                    </div>
+                    <div className="mt-10">
+                        <div className="text-center ">
+                            <h3 className="font-bold text-lg">Senin – Minggu</h3>
+                                <ul className="list-disc list-inside list-none mb-3">
+                                    <li>06.00 - 21.00</li>
+                                </ul>
+                        </div>
                     </div>
                 </div>
             </div>
